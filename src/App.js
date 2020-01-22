@@ -7,9 +7,21 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <script src="https://kit.fontawesome.com/3abf9835a4.js" crossorigin="anonymous"></script> */}
-        <Main />
-        <Main />
-        <Main />
+        <div className='card me'>
+          <div className='container'>
+            <div></div>
+          </div>
+        </div>
+        <div className='card skill'>
+          <div>
+
+          </div>
+        </div>
+        <div className='card projects'>
+          <div>
+
+          </div>
+        </div>
       </header>
     </div>
   );
