@@ -2,6 +2,23 @@
   text-align: center;
   box-sizing: border-box;
 }
+.fixedTop{
+  top: 0;
+  padding: 30px;
+  width: 95vw;
+  height: 10%;
+  position: fixed;
+  background-color: white;
+  opacity: 0.3;
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+
+}
+.link{
+  height: 50px;
+}
 
 /* .App-header {
   background-color: #505050;
@@ -61,15 +78,21 @@
 .me {
   background-image: url("images/stars.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .inline {
   display: inline;
   margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /* @media (min-width: 768px) .container {
   width: calc((100% + 20px) / 5 * 4 + -25px);
   height: 130px;
 } */
+
 
