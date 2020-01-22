@@ -55,7 +55,8 @@
   background-color: #dfdcda;
   border: 1px solid #cbcbcb;
   border-radius: 20px;
-  flex-flow: column;
+  display: flex;
+  justify-content: space-between;
 }
 .flexColumn {
   display: flex;
