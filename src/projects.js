@@ -7,6 +7,7 @@ import javascript from "./images/logos/js.png";
 import node from "./images/logos/node.png";
 import react from "./images/logos/react.png";
 import mongoDB from "./images/logos/mongo.png";
+import expressJS from "./images/logos/express.png";
 
 import "./projects.css";
 import "./frontend/App.css";
@@ -25,6 +26,7 @@ export default function Skills({ title }) {
                 <Icon title={css} name='CSS' />
                 <Icon title={javascript} name='javascript' />
                 <Icon title={node} name='nodeJS' />
+                <Icon title={expressJS} name='' />
                 <Icon title={react} name='ReactJS' />
                 <Icon title={mongoDB} name='mongoDB' />
             </div>
