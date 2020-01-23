@@ -1,0 +1,38 @@
+.card {
+    margin: 5px auto;
+    padding: 15px;
+    width: 95vw;
+    height: 95vh;
+    background-color: #dfdcda;
+    border: 1px solid #cbcbcb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flexColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexWrap {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .skills {
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+  .projects {
+    width: 60vw;
+    height: 90vw;
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  .project {
+    width: 300px;
+  }
+  

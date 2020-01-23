@@ -8,14 +8,15 @@ import node from "./images/logos/node.png";
 import react from "./images/logos/react.png";
 import mongoDB from "./images/logos/mongo.png";
 
-import "./App.css";
+import "./projects.css";
+import "./frontend/App.css";
 
-export default function Skill({ title }) {
+export default function Skills({ title }) {
   return (
     <div>
         <div className="card">
             <div className='flexWrap projects'>
-                <a href='https://nadinefresko.github.io/group_project/'>
+                <a href='https://nadinefresko.github.io/group_project/' target='_blank' rel='noopener noreferrer'>
                     <img className='project' src={project1} alt='Recycling project' />
                 </a>
             </div>

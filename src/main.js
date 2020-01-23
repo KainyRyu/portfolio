@@ -1,6 +1,6 @@
 import React from 'react';
 import stars from './images/stars.jpg'
-import './App.css';
+import './frontend/App.css';
 
 export default function Main () {
     return(
