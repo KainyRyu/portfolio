@@ -14,7 +14,7 @@ function App() {
         <div className='fixedTop'>
           <div className='inline'>
             <h1>Kainy Ryu</h1>
-            <h2>Full Stack JavaScript Engineer</h2>
+            <h2>Full Stack JavaScript(React) Engineer</h2>
           </div>
           <div className='inline links'>
             <a href='https://www.linkedin.com/in/kainyryu/' target='_blank' rel='noopener noreferrer'>

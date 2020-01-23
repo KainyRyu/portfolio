@@ -25,9 +25,9 @@ export default function Skills({ title }) {
                 <Icon title={html} name='HTML' />
                 <Icon title={css} name='CSS' />
                 <Icon title={javascript} name='javascript' />
+                <Icon title={react} name='ReactJS' />
                 <Icon title={node} name='nodeJS' />
                 <Icon title={expressJS} name='' />
-                <Icon title={react} name='ReactJS' />
                 <Icon title={mongoDB} name='mongoDB' />
             </div>
         </div>
@@ -37,9 +37,9 @@ export default function Skills({ title }) {
 
 function Icon({ title, name }) {
   return (
-    <div className="container">
+    <div className="skillContainer">
       <img className="icon" src={title} alt={name} />
-      <h3 className="inline">{name}</h3>
+      <h3 className="skillname inline">{name}</h3>
     </div>
   );
 }

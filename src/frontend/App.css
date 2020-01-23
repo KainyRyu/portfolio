@@ -47,19 +47,6 @@
   overflow: hidden;
 }
 
-.container {
-  width: 200px;
-  height: 90px;
-  background-color: #ffffff;
-  border-radius: 13px;
-  margin: 2px;
-}
-
-.icon {
-  height: 50px;
-  margin: auto 0;
-}
-
 .me {
   background-image: url("../images/stars.jpg");
   background-size: cover;
@@ -69,10 +56,6 @@
 
 .inline {
   display: inline;
-  margin-left: 20px;
-  /* margin-top: 0;
-  margin-bottom: 0; */
-  padding: 0;
 }
 
 /* @media (min-width: 768px) .container {
