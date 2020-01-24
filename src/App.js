@@ -1,9 +1,9 @@
 import React from 'react';
-import Main from '../main';
-import Skills from '../projects';
+import Main from './main';
+import Skills from './projects';
 // import me from '../images/stars.jpg'
-import github from '../images/logos/github.svg'
-import linkedin from '../images/logos/linkedin.svg'
+import github from './images/logos/github.svg'
+import linkedin from './images/logos/linkedin.svg'
 
 import './App.css';
 

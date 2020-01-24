@@ -10,7 +10,7 @@ import mongoDB from "./images/logos/mongo.png";
 import expressJS from "./images/logos/express.png";
 
 import "./projects.css";
-import "./frontend/App.css";
+import "./App.css";
 
 export default function Skills({ title }) {
   return (
