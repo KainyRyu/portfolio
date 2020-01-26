@@ -1,0 +1,30 @@
+.timesbg{
+    color: #DFDCDA;
+    display: flex;
+}
+
+
+.flexColumn {
+    display: flex;
+    flex-flow: column;
+}
+
+.kainy{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hightlight {
+    border-top: black 2px solid;
+    border-bottom: black 1px solid;
+}
+.timesBody{
+    display: flex;
+}
+
+.timesProfile{
+    display: flex;
+}
+
+img {
+    filter: grayscale(100%);
+}

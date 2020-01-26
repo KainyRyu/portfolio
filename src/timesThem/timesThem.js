@@ -1,28 +1,35 @@
 import React from 'react';
+import './timesThem.css';
 
 export default function Times () {
-    retunr{
+    return(
         <div className='timesbg'>
-            <div className='timesHeader'>
-                <h1 className='kainy'></h1>
-                <label></label>
+            <div className='timesHeader flexColumn'>
+                <h1 className='kainy'>Kainy</h1>
+                <p className='highlight'>Full-stack JavaScript Developer</p>
             </div>
             <div className='timesBody'>
-                <div className='timesProfile'>
-                    <img src={} alt=''/>
+                <div className='timesProfile flexColumn'>
+                    {/* <img src={} alt=''/> */}
                     <p><label className='theFirst'>L</label>orem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore placeat illo eos molestiae velit, beatae cum, nostrum maiores rerum repellat neque, asperiores exercitationem magnam officia quam consequuntur doloremque necessitatibus ut quos excepturi iure odit laborum minima. Velit error reiciendis ut possimus laborum sit porro dolor dolorem cumque praesentium nesciunt adipisci provident ex reprehenderit a omnis iste non hic deleniti totam eveniet consectetur, natus similique? Reprehenderit mollitia voluptas unde adipisci distinctio repellat officiis, praesentium, placeat, incidunt saepe dolorem repellendus illo magni possimus assumenda. Quos cupiditate suscipit a, dolores </p>
                 </div>
-                <div className='timesProject'>
+                <div className='timesProject flexColumn'>
                     <div>
                         <p></p>
                     </div>
                 </div>
-                <div className='timesSkills'>
-                    <h1></h1>
+                <div className='timesSkills flexColumn'>
+                    <h1>HTML</h1>
+                    <h1>CSS</h1>
+                    <h1>JavaScript</h1>
+                    <h1>React</h1>
+                    <h1>NodeJS</h1>
+                    <h1>MongoDB</h1>
+                    <h1>Express</h1>
                 </div>
             </div>
         </div>
-    }
+    )
 }
 
 
