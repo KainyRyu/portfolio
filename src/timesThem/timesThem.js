@@ -15,7 +15,13 @@ export default function Times () {
                 </div>
                 <div className='timesProject flexColumn'>
                     <div>
-                        <p></p>
+                        <label>Recycling</label>
+                    </div>
+                    <div>
+                        <label>Kodflix</label>
+                    </div>
+                    <div>
+                        <label>portfolio</label>
                     </div>
                 </div>
                 <div className='timesSkills flexColumn'>
