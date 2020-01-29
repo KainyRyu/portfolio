@@ -1,38 +1,70 @@
 import React from 'react';
 import './timesThem.css';
+import logo from './../images/logo.png'
+import profileImg from '../images/IMG_1269.jpeg'
 
 export default function Times () {
     return(
         <div className='timesbg'>
             <div className='timesHeader flexColumn'>
-                <h1 className='kainy'>Kainy</h1>
-                <span className='highlight'>Full-stack JavaScript Developer</span>
+                <img src={logo} alt='Kainy Ryu' />
+                <div className='highlight'>
+                    <label>Full-stack JavaScript Developer</label>
+                    <label>
+                        <a href='https://www.linkedin.com/in/kainyryu/' alt='LinkedIn' target='_blank'>
+                            LinkedIn    </a> 
+                        <a href='https://github.com/KainyRyu' alt='GitHub' target='_blank'>
+                            GitHub     </a> 
+                        <a href='' alt='Gmail' target='_blank'>
+                            Contact   </a>
+                    </label>
+                </div>
             </div>
-            
+
             <div className='timesBody'>
+
                 <div className='timesProfile flexColumn'>
-                    {/* <img src={} alt=''/> */}
-                    <p><label className='theFirst'>L</label>orem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore placeat illo eos molestiae velit, beatae cum, nostrum maiores rerum repellat neque, asperiores exercitationem magnam officia quam consequuntur doloremque necessitatibus ut quos excepturi iure odit laborum minima. Velit error reiciendis ut possimus laborum sit porro dolor dolorem cumque praesentium nesciunt adipisci provident ex reprehenderit a omnis iste non hic deleniti totam eveniet consectetur, natus similique? Reprehenderit mollitia voluptas unde adipisci distinctio repellat officiis, praesentium, placeat, incidunt saepe dolorem repellendus illo magni possimus assumenda. Quos cupiditate suscipit a, dolores </p>
+                    <img src={profileImg} alt='Me'/>
+                    <div className='summary topBorder'>
+                        <p><label className='theFirst'>L</label>orem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore placeat illo eos molestiae velit, beatae cum, nostrum maiores rerum repellat neque, asperiores exercitationem magnam officia quam consequuntur doloremque necessitatibus ut quos excepturi iure odit laborum minima. dolores </p>
+                        <p>Velit error reiciendis ut possimus laborum sit porro dolor dolorem cumque praesentium nesciunt adipisci provident ex reprehenderit a omnis iste non hic deleniti totam eveniet consectetur, natus similique? Reprehenderit mollitia voluptas unde adipisci distinctio repellat officiis, praesentium, placeat, incidunt saepe dolorem repellendus illo magni possimus assumenda. Quos cupiditate suscipit a, dolores </p>
+                    </div>
                 </div>
+
                 <div className='timesProject flexColumn'>
-                    <div>
-                        <label>Recycling</label>
+                    <h1>Projects</h1>
+                    <div className='topBorder'>
+                        <a href='https://nadinefresko.github.io/group_project/' alt='Recycle Group project'>
+                            <h4>Recycling</h4>
+                        </a>
+                        <p>The first project I've  an web app with a drag and drop recycling game not mobile friendly. Code First: Girls group project</p>
+
+                    </div>
+                    <div className='topBorder'>
+                        <a href='https://kodflix-kainy.herokuapp.com' alt='Kodflix'>
+                            <h4>Kodflix</h4>
+                        </a>
+                        <p></p>
                     </div>
                     <div>
-                        <label>Kodflix</label>
-                    </div>
-                    <div>
-                        <label>portfolio</label>
+                        <a href='' alt=''>
+                            <h4>Group Projects</h4>
+                        </a>
+                        <p></p>
                     </div>
                 </div>
+
                 <div className='timesSkills flexColumn'>
-                    <h1>HTML</h1>
-                    <h1>CSS</h1>
-                    <h1>JavaScript</h1>
-                    <h1>React</h1>
-                    <h1>NodeJS</h1>
-                    <h1>MongoDB</h1>
-                    <h1>Express</h1>
+                    <h2>HTML</h2>
+                    <h2>CSS</h2>
+                    <h2>JavaScript</h2>
+                    <h2>React</h2>
+                    <h2>NodeJS</h2>
+                    <h2>MongoDB</h2>
+                    <h2>Express</h2>
+                    <h2>Swimming</h2>
+                    <h2>Squash</h2>
+                    <h2>Ping Pong</h2>
                 </div>
             </div>
         </div>

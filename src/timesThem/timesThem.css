@@ -1,9 +1,17 @@
 .timesbg{
     background-color: #F8F8F8;
-    /* display: flex; */
     margin: 0;
     padding: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+a {
+    text-decoration-line: none;
+    text-decoration-color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 .flexColumn {
@@ -14,15 +22,24 @@
 .timesHeader {
     width: 100%;
 }
-.kainy{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+.timesHeader img{
+    height: auto;
+    width: 30%;
+    margin: 10px auto;
 }
 
 .highlight {
     border-top: black 2px solid;
     border-bottom: black 1px solid;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
 }
+
+.highlight label a{
+    margin: 0 5px;
+}
+
 .timesBody{
     display: flex;
 
@@ -30,9 +47,45 @@
 
 .timesProfile{
     display: flex;
-    width: 40vw;
+    flex: 2;
 }
+
+.timesProfile img {
+    width: 40vw;
+    height: auto;
+    margin: 5px;
+    border: black solid 1px;;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+}
+.summary p {
+
+    text-align: justify;
+    width: 48%;
+}
+
 
 img {
     filter: grayscale(100%);
 }
+
+.timesProject {
+    padding: 20px;
+    flex: 1;
+}
+
+.timesSkills {
+    margin: 10px;
+    padding: 5px;
+    flex: 1;
+    text-align: end;
+    border-left: black solid 1px;
+}
+
+.topBorder {
+    border-top: black solid 1px;
+}
+
