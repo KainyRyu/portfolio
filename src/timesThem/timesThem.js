@@ -6,8 +6,9 @@ export default function Times () {
         <div className='timesbg'>
             <div className='timesHeader flexColumn'>
                 <h1 className='kainy'>Kainy</h1>
-                <p className='highlight'>Full-stack JavaScript Developer</p>
+                <span className='highlight'>Full-stack JavaScript Developer</span>
             </div>
+            
             <div className='timesBody'>
                 <div className='timesProfile flexColumn'>
                     {/* <img src={} alt=''/> */}

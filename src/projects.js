@@ -8,7 +8,6 @@ import node from "./images/logos/node.png";
 import react from "./images/logos/react.png";
 import mongoDB from "./images/logos/mongo.png";
 import expressJS from "./images/logos/express.png";
-
 import "./projects.css";
 import "./App.css";
 

@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-  box-sizing: border-box;
+  /* text-align: center;
+  box-sizing: border-box; */
+  background: #F8F8F8;
 }
 .fixedTop {
   top: 0;
