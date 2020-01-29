@@ -1,8 +1,5 @@
 import React from "react";
-import Times from "./timesThem/timesThem";
-import Skills from "./projects";
-import github from "./images/logos/github.svg";
-import linkedin from "./images/logos/linkedin.svg";
+import Times from "./timesThem";
 import "./App.css";
 
 function App() {

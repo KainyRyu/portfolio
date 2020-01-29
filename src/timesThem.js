@@ -1,7 +1,7 @@
 import React from 'react';
 import './timesThem.css';
-import logo from './../images/logo.png'
-import profileImg from '../images/IMG_1269.jpeg'
+import logo from './images/logo.png'
+import profileImg from './images/IMG_1269.jpeg'
 
 export default function Times () {
     return(
