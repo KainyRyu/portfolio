@@ -7,7 +7,15 @@ export default function Times () {
     return(
         <div className='timesbg'>
             <div className='timesHeader flexColumn'>
-                <img src={logo} alt='Kainy Ryu' />
+                <div>
+                    <div>
+                        <h1>
+                            "Hire Me"
+                        </h1>
+                    </div>
+                    <img src={logo} alt='Kainy Ryu' />
+                    <div></div>
+                </div>
                 <div className='highlight'>
                     <label>Full-stack JavaScript Developer</label>
                     <label>
@@ -38,7 +46,7 @@ export default function Times () {
                     <h1>Projects</h1>
                     <div className='topBorder'>
                         <a href='https://nadinefresko.github.io/group_project/' alt='Recycle Group project' target='_blank'>
-                            <h4>Recycling</h4>
+                            <h4>Recycling  <svg width="7" height="11" viewBox="0 0 7 12"><path d="M1 1l4.333 5L1 11" stroke="#121212" stroke-width="2" fill="none" fill-rule="evenodd"></path></svg></h4>
                         </a>
                         <p>The first project I've  an web app with a drag and drop recycling game not mobile friendly. Code First: Girls group project</p>
 
