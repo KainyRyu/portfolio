@@ -26,7 +26,7 @@ class Projects extends React.Component {
                         <a href='https://kodflix-kainy.herokuapp.com' alt='Kodflix' target='_blank'>
                             <h4>Kodflix</h4>
                         </a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
+                        <p>A website built with React.</p>
                     </div>
                     <div className='topBorder'>
                         <a href='' alt=''>
