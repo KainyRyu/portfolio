@@ -1,6 +1,6 @@
 import React from 'react';
 import './timesThem.css';
-import logo from './images/logo.png'
+import logo from './images/kainylogo.svg'
 import profileImg from './images/IMG_1269.jpeg'
 
 export default function Times () {
@@ -10,14 +10,16 @@ export default function Times () {
                 <div>
                     <div>
                         <h1>
-                            "Hire Me"
+                            {/* "Hire Me" */}
                         </h1>
                     </div>
                     <img src={logo} alt='Kainy Ryu' />
-                    <div></div>
+                    <div>
+                        <p>Full-Stack Javascript Developer</p>
+                    </div>
                 </div>
                 <div className='highlight'>
-                    <label>Full-stack JavaScript Developer</label>
+                    <label>HTML CSS Bootstrap JavaScript React NodeJS MongoDB Express </label>
                     <label>
                         <a href='https://www.linkedin.com/in/kainyryu/' alt='LinkedIn' target='_blank'>
                             LinkedIn

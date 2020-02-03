@@ -31,8 +31,12 @@ a:visited {
 .timesHeader div div{
     border: black 1px solid;
     width: 20%;
-    height: 200px;
+    height: 100px;
+    font-style: italic;
+    padding:10px;
 }
+
+
 .timesHeader div div h1{
     margin: auto;
     
