@@ -97,6 +97,8 @@ img {
 .timesProject {
     padding: 20px;
     flex: 1;
+    border-left: black solid 1px;
+    margin: 5px;
 }
 
 .timesSkills {
@@ -107,7 +109,7 @@ img {
     border-left: black solid 1px;
 }
 
-.topBorder {
+/* .topBorder {
     border-top: black solid 1px;
-}
+} */
 

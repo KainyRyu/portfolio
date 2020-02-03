@@ -22,13 +22,13 @@ export default function Times () {
                 <div className='highlight'>
                     <label>HTML CSS Bootstrap JavaScript React NodeJS MongoDB Express </label>
                     <label>
-                        <a href='https://www.linkedin.com/in/kainyryu/' alt='LinkedIn' target='_blank'>
+                        <a href='https://www.linkedin.com/in/kainyryu/' rel='LinkedIn' target='_blank'>
                             LinkedIn
                         </a> 
-                        <a href='https://github.com/KainyRyu' alt='GitHub' target='_blank'>
+                        <a href='https://github.com/KainyRyu' rel='GitHub' target='_blank'>
                             GitHub
                         </a> 
-                        <a href='' alt='Gmail' target='_blank'>
+                        <a href='' rel='Gmail' target='_blank'>
                             Contact
                         </a>
                     </label>
@@ -42,7 +42,7 @@ export default function Times () {
                     <h1>Projects</h1>
                     <div className='topBorder'>
                         <a href='https://nadinefresko.github.io/group_project/' alt='Recycle Group project' target='_blank'>
-                            <h4>Recycling<svg width="7" height="11" viewBox="0 0 7 12"><path d="M1 1l4.333 5L1 11" stroke="#121212" stroke-width="2" fill="none" fill-rule="evenodd"></path></svg></h4>
+                            <h4>Recycling</h4>
                         </a>
                         <p>The first project I've  an web app with a drag and drop recycling game not mobile friendly. Code First: Girls group project</p>
 
@@ -60,7 +60,7 @@ export default function Times () {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
                     </div>
                 </div>
-
+{/* 
                 <div className='timesSkills flexColumn'>
                     <h2>HTML</h2>
                     <h2>CSS</h2>
@@ -72,7 +72,7 @@ export default function Times () {
                     <h2>Swimming</h2>
                     <h2>Squash</h2>
                     <h2>Ping Pong</h2>
-                </div>
+                </div> */}
 
             </div>
         </div>
