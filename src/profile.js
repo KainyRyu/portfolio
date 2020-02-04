@@ -1,5 +1,6 @@
 import React from 'react';
 import profileImg from './images/IMG_1269.jpeg'
+import './timesThem.css';
 
 export default function Profile() {
     return(

@@ -61,16 +61,15 @@ a:visited {
 
 .timesBody{
     display: flex;
-
 }
 
 .timesProfile{
     display: flex;
-    flex: 2;
+    flex: 1;
 }
 
 .timesProfile img {
-    width: 40vw;
+    width: 50vw;
     height: auto;
     margin: 5px;
     border: black solid 1px;;

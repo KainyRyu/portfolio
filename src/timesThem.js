@@ -22,15 +22,15 @@ export default function Times () {
                 <div className='highlight'>
                     <label>HTML CSS Bootstrap JavaScript React NodeJS MongoDB Express </label>
                     <label>
-                        <a href='https://www.linkedin.com/in/kainyryu/' rel='LinkedIn' target='_blank'>
+                        <a href='https://www.linkedin.com/in/kainyryu/' rel="noopener noreferrer" target='_blank'>
                             LinkedIn
                         </a> 
-                        <a href='https://github.com/KainyRyu' rel='GitHub' target='_blank'>
+                        <a href='https://github.com/KainyRyu' rel="noopener noreferrer" target='_blank'>
                             GitHub
                         </a> 
-                        <a href='' rel='Gmail' target='_blank'>
+                        {/* <a href='' rel="noopener noreferrer" target='_blank'> */}
                             Contact
-                        </a>
+                        {/* </a> */}
                     </label>
                 </div>
             </div>
@@ -41,22 +41,22 @@ export default function Times () {
                 <div className='timesProject flexColumn'>
                     <h1>Projects</h1>
                     <div className='topBorder'>
-                        <a href='https://nadinefresko.github.io/group_project/' alt='Recycle Group project' target='_blank'>
+                        <a href='https://nadinefresko.github.io/group_project/' rel="noopener noreferrer" target='_blank'>
                             <h4>Recycling</h4>
                         </a>
                         <p>The first project I've  an web app with a drag and drop recycling game not mobile friendly. Code First: Girls group project</p>
 
                     </div>
                     <div className='topBorder'>
-                        <a href='https://kodflix-kainy.herokuapp.com' alt='Kodflix' target='_blank'>
+                        <a href='https://kodflix-kainy.herokuapp.com' rel="noopener noreferrer" target='_blank'>
                             <h4>Kodflix</h4>
                         </a>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
                     </div>
                     <div className='topBorder'>
-                        <a href='' alt=''>
+                        {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
                             <h4>Group Projects</h4>
-                        </a>
+                        {/* </a> */}
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
                     </div>
                 </div>
