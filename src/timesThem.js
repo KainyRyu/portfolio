@@ -1,43 +1,15 @@
 import React from 'react';
 import './timesThem.css';
-import logo from './images/kainylogo.svg'
 import Profile from './profile'
+import Header from './Header';
 
 
 export default function Times () {
     return(
         <div className='timesbg'>
-            <div className='timesHeader flexColumn'>
-                <div>
-                    <div>
-                        <h1>
-                            {/* "Hire Me" */}
-                        </h1>
-                    </div>
-                    <img src={logo} alt='Kainy Ryu' />
-                    <div>
-                        <p>Full-Stack Javascript Developer</p>
-                    </div>
-                </div>
-                <div className='highlight'>
-                    <label>HTML CSS Bootstrap JavaScript React NodeJS MongoDB Express </label>
-                    <label>
-                        <a href='https://www.linkedin.com/in/kainyryu/' rel="noopener noreferrer" target='_blank'>
-                            LinkedIn
-                        </a> 
-                        <a href='https://github.com/KainyRyu' rel="noopener noreferrer" target='_blank'>
-                            GitHub
-                        </a> 
-                        {/* <a href='' rel="noopener noreferrer" target='_blank'> */}
-                            Contact
-                        {/* </a> */}
-                    </label>
-                </div>
-            </div>
-
+            <Header />
             <div className='timesBody'>
                 <Profile />
-                
                 <div className='timesProject flexColumn'>
                     <h1>Projects</h1>
                     <div className='topBorder'>

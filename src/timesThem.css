@@ -22,28 +22,29 @@ a:visited {
 
 .timesHeader {
     width: 100%;
+    height: 20vh;
 }
 .timesHeader div {
     display: flex;
     justify-content: space-between;
 }
 
-.timesHeader div div{
+
+.timesHeader-box{
     border: black 1px solid;
     width: 20%;
-    height: 100px;
     font-style: italic;
     padding:10px;
 }
 
 
-.timesHeader div div h1{
+.timesHeader div div p{
     margin: auto;
     
 }
-.timesHeader div img{
+.logo {
     height: auto;
-    width: 30%;
+    width: 40%;
     margin: 10px auto;
 }
 
