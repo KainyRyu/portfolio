@@ -3,16 +3,18 @@
     margin: 0;
     padding: 5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
-a {
+.email {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+a, a:visited {
     color: black;
     text-decoration-line: none;
-    text-decoration-color: black;
-}
-
-a:visited {
-    color: black;
 }
 
 .flexColumn {
@@ -30,7 +32,7 @@ a:visited {
 }
 
 
-.timesHeader-box{
+.timesHeader-box {
     border: black 1px solid;
     width: 20%;
     font-style: italic;
@@ -40,8 +42,8 @@ a:visited {
 
 .timesHeader div div p{
     margin: auto;
-    
 }
+
 .logo {
     height: auto;
     width: 40%;
