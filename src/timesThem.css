@@ -125,7 +125,7 @@ img {
   margin: 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .timesBody {
     display: flex;
     flex-flow: row;
@@ -134,16 +134,24 @@ img {
 
   .skills {
     margin: 30 10 0 10;
+    padding: 20 10;
     width: 25%;
     font-size: 1.5em;
     border-top: none;
     border-bottom: none;
     border-right: 1px solid black;
     border-left: 1px solid black;
+    flex: 1;
 
   }
 
   .timesProfile {
-    width: 40%;
+    flex: 3;
   }
+
+  .timesProject {
+    flex: 2;
+  }
+
+
 }

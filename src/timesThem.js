@@ -11,7 +11,6 @@ export default function Times () {
         <div className='timesbg'>
             <Header />
             <div className='timesBody'>
-                <CopyEmail />
                 <Profile />
                 <h1 className='skills' >“Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” </h1>
                 <Project />
