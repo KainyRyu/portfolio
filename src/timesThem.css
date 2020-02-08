@@ -1,117 +1,149 @@
-.timesbg{
-    background-color: #F8F8F8;
-    margin: 0;
-    padding: 5%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.email {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
+.timesbg {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 5%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: black;
     text-decoration-line: none;
+    font-size: 1.2em;
+}
+
+.email {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  border: none;
+  background-color: #f8f8f8;;
 }
 
 .timesHeader {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
+  padding-top: 10px;
+  background-color: #f8f8f8;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 .timesHeader div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .timesHeader-box {
-    border: black 1px solid;
-    width: 20%;
-    font-style: italic;
-    padding:10px;
+  border: black 1px solid;
+  width: 20%;
+  font-style: italic;
+  padding: 10px;
 }
 
-
-.timesHeader div div p{
-    margin: auto;
+.timesHeader div div p {
+  margin: auto;
+  font-size: 1.1em;
 }
 
 .logo {
-    height: auto;
-    width: 40%;
-    margin: 10px auto;
+  height: auto;
+  width: 40%;
+  margin: 10px auto;
+  border: none;
 }
 
 .highlight {
-    border-top: black 2px solid;
-    border-bottom: black 1px solid;
-    display: flex;
-    justify-content: space-between;
-    font-style: italic;
+  border-top: black 2px solid;
+  border-bottom: black 1px solid;
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
 }
 
-.highlight label a{
-    margin: 0 5px;
+.highlight label a {
+  margin: 0 5px;
 }
 
-.timesBody{
-    display: flex;
-    flex-flow: column;
+.timesBody {
+  display: flex;
+  flex-flow: column;
+  margin-top: 100px;
 }
 
-.timesProfile{
-    display: flex;
-    flex-flow: column;
-    flex: 1;
+.timesProfile {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
 }
 
 .timesProfile img {
-    width: 99%;
-    height: auto;
-    margin: 5px auto;
-    border: black solid 1px;;
+  position: relative;
+  width: 99%;
+  height: auto;
+  margin: 5px auto;
+  border: black solid 1px;
 }
 
 .timesProject div p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .summary {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .summary p {
-    text-align: justify;
-    width: 48%;
+  text-align: justify;
+  width: 48%;
 }
 
 img {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
+
+
+.skills {
+    text-align: center;
+    font-style: italic;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 
 .timesProject {
+  display: flex;
+  flex-flow: column;
+  /* padding: 20px; */
+  flex: 1;
+  /* border-left: black solid 1px; */
+  margin: 5px;
+}
+
+@media (min-width: 600px) {
+  .timesBody {
     display: flex;
-    flex-flow: column;
-    /* padding: 20px; */
-    flex: 1;
-    /* border-left: black solid 1px; */
-    margin: 5px;
+    flex-flow: row;
+    margin-top: 90px;
+  }
+
+  .skills {
+    margin: 30 10 0 10;
+    width: 25%;
+    font-size: 1.5em;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+  }
+
+  .timesProfile {
+    width: 40%;
+  }
 }
-
-.timesSkills {
-    margin: 10px;
-    padding: 5px;
-    flex: 1;
-    text-align: end;
-}
-
-/* .topBorder {
-    border-top: black solid 1px;
-} */
-

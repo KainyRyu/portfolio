@@ -3,6 +3,7 @@ import './timesThem.css';
 import Profile from './profile'
 import Header from './Header';
 import Project from './project/Projects';
+import CopyEmail from './CopyEmail';
 
 
 export default function Times () {
@@ -10,23 +11,10 @@ export default function Times () {
         <div className='timesbg'>
             <Header />
             <div className='timesBody'>
+                <CopyEmail />
                 <Profile />
                 <h1 className='skills' >“Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” </h1>
                 <Project />
-{/* 
-                <div className='timesSkills flexColumn'>
-                    <h2>HTML</h2>
-                    <h2>CSS</h2>
-                    <h2>JavaScript</h2>
-                    <h2>React</h2>
-                    <h2>NodeJS</h2>
-                    <h2>MongoDB</h2>
-                    <h2>Express</h2>
-                    <h2>Swimming</h2>
-                    <h2>Squash</h2>
-                    <h2>Ping Pong</h2>
-                </div> */}
-
             </div>
         </div>
     )

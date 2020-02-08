@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './images/kainylogo.svg';
+import CopyEmail from './CopyEmail';
 
 export default function Header() {
   return (
@@ -27,9 +28,7 @@ export default function Header() {
                 LinkedIn
                 </a>{" "}
                 <br />
-                <button className='email' onClick={copyToClipboard}>
-                    Contact
-                </button>
+                <CopyEmail />
             </p>
         </div>
     </div>
@@ -43,8 +42,4 @@ export default function Header() {
 }
 
 
-
-function copyToClipboard() {
-    return
-}
 

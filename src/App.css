@@ -59,13 +59,6 @@
   display: inline;
 }
 
-.skills {
-  text-align: center;
-  font-style: italic;
-  padding: 10px 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
 
 /* @media (min-width: 768px) .container {
   width: calc((100% + 20px) / 5 * 4 + -25px);
