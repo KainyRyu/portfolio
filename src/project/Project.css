@@ -1,3 +1,40 @@
+.projectLabel {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.project-label span {
+    font-size: 15px;
+}
+
+img {
+    border: 1px solid black;
+    width: 99%;
+}
+
+.project-title {
+    margin-bottom: 0;
+}
+
+.project-summary {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: black 1px solid;
+}
+.strong {
+ font-weight: bold;
+}
+
+.placeholder{
+    width: 99%;
+    height: 310px;
+    background-color: gray;
+    border: black solid 1px;
+}
 @media (min-width: 600px) {
     
 }

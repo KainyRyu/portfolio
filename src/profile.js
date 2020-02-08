@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from './images/IMG_1269.jpeg'
+import profileImg from './images/bwbg.gif'
 import './timesThem.css';
 
 export default function Profile() {
@@ -11,7 +11,5 @@ export default function Profile() {
                 <p>Velit error reiciendis ut possimus laborum sit porro dolor dolorem cumque praesentium nesciunt adipisci provident ex reprehenderit a omnis iste non hic deleniti totam eveniet consectetur, natus similique? Reprehenderit mollitia voluptas unde adipisci distinctio repellat officiis, praesentium, placeat, incidunt saepe dolorem repellendus illo magni possimus assumenda. Quos cupiditate suscipit a, dolores </p>
             </div>
         </div>
-
-
     );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './timesThem.css';
 import Profile from './profile'
 import Header from './Header';
+import Project from './project/Projects';
 
 
 export default function Times () {
@@ -10,28 +11,8 @@ export default function Times () {
             <Header />
             <div className='timesBody'>
                 <Profile />
-                <div className='timesProject flexColumn'>
-                    <h1>Projects</h1>
-                    <div className='topBorder'>
-                        <a href='https://nadinefresko.github.io/group_project/' rel="noopener noreferrer" target='_blank'>
-                            <h4>Recycling</h4>
-                        </a>
-                        <p>The first project I've  an web app with a drag and drop recycling game not mobile friendly. Code First: Girls group project</p>
-
-                    </div>
-                    <div className='topBorder'>
-                        <a href='https://kodflix-kainy.herokuapp.com' rel="noopener noreferrer" target='_blank'>
-                            <h4>Kodflix</h4>
-                        </a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
-                    </div>
-                    <div className='topBorder'>
-                        {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
-                            <h4>Group Projects</h4>
-                        {/* </a> */}
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, nulla velit dolorem iusto quisquam sequi iste tempora. Deleniti labore</p>
-                    </div>
-                </div>
+                <h1 className='skills' >“Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” </h1>
+                <Project />
 {/* 
                 <div className='timesSkills flexColumn'>
                     <h2>HTML</h2>
