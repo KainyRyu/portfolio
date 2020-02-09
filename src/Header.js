@@ -35,7 +35,7 @@ export default function Header() {
     </div>
     <div className="highlight">
         <label>
-          HTML CSS Bootstrap JavaScript React NodeJS MongoDB Express{" "}
+          JavaScript React NodeJS MongoDB Express{" "}
         </label>
     </div>
     </div>
