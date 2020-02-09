@@ -3,7 +3,6 @@ import './timesThem.css';
 import Profile from './profile'
 import Header from './Header';
 import Project from './project/Projects';
-import CopyEmail from './CopyEmail';
 
 
 export default function Times () {

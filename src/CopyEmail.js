@@ -9,7 +9,7 @@ export default class CopyEmail extends Component {
     el.select()
     document.execCommand('copy')
     document.body.removeChild(el)
-    alert('My email has copied to clipboard')
+    alert(`Kainy's email address has copied to your clipboard!`)
   }
  
   render() {

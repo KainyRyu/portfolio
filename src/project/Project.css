@@ -39,4 +39,12 @@ img {
     .placeholder {
         height: 200px;
     }
+
+    .project-label {
+        font-size: 1.4em;
+    }
+    
+    .project-label-span {
+        font-size: 1.1em;
+    }
 }

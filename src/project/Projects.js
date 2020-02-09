@@ -6,7 +6,7 @@ import "./Project.css";
 export default function Project() {
   return (
     <div className="timesProject">
-      <label className='project-label'>PROJECTS, <span>click the text to see my works</span></label>
+      <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
       <div className="topBorder">
         <img src={project1} alt="recycling" />
         <a

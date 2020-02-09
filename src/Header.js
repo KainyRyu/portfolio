@@ -1,6 +1,7 @@
 import React from "react";
 import logo from './images/kainylogo.svg';
 import CopyEmail from './CopyEmail';
+import './header.css'
 
 export default function Header() {
   return (
