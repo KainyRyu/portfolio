@@ -13,31 +13,31 @@ export default function Header() {
         <img className="logo" src={logo} alt="Kainy Ryu" />
         <div className="timesHeader-box">
             <p>
-                <a
-                href="https://github.com/KainyRyu"
-                rel="noopener noreferrer"
-                target="_blank"
-                >
-                GitHub
-                </a>{" "}
-                <br />
-                <a
-                href="https://www.linkedin.com/in/kainyryu/"
-                rel="noopener noreferrer"
-                target="_blank"
-                >
-                LinkedIn
-                </a>{" "}
-                <br />
-                <CopyEmail />
+              <a
+              href="https://github.com/KainyRyu"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              GitHub
+              </a>{" "}
+              <br />
+              <a
+              href="https://www.linkedin.com/in/kainyryu/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              LinkedIn
+              </a>{" "}
+              <br />
+              <CopyEmail />
             </p>
         </div>
-    </div>
-    <div className="highlight">
+      </div>
+      <div className="highlight">
         <label>
           JavaScript React NodeJS MongoDB Express{" "}
         </label>
-    </div>
+      </div>
     </div>
   );
 }
