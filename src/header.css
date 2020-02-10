@@ -3,6 +3,7 @@
   padding-top: 10px;
   background-color: #f8f8f8;
   width: 96%;
+  height: 100px;
   display: flex;
   flex-flow: column;
   position: fixed;
