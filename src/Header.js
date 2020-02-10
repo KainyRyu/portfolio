@@ -21,7 +21,7 @@ export default function Header() {
               target="_blank"
               >
               GitHub
-              </a>{" "}
+              </a>
               <br />
               <a
               href="https://www.linkedin.com/in/kainyryu/"
@@ -29,16 +29,19 @@ export default function Header() {
               target="_blank"
               >
               LinkedIn
-              </a>{" "}
+              </a>
               <br />
-              <CopyEmail />
+              <a href="mailto:kainy2109@gmail.com">
+              Contact
+              </a>
+              {/* <CopyEmail /> */}
             </p>
         </div>
       </div>
       <div className="highlight">
-        <label>
+        <span>
           JavaScript React NodeJS MongoDB Express{" "}
-        </label>
+        </span>
       </div>
     </div>
   );

@@ -59,11 +59,12 @@
   display: flex;
   justify-content: space-between;
   font-style: italic;
-  height: 25px;
+  height: 22px;
+  padding: auto;
   background-color: #f8f8f8;
 }
 
-.highlight label a {
+.highlight span a {
   margin: 0 5px;
 }
 
