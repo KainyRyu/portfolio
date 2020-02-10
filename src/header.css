@@ -28,6 +28,7 @@
 .timesHeader-box {
   border: black 1px solid;
   width: 20%;
+  height: 75px;
   font-style: italic;
   padding: 10px;
 }
