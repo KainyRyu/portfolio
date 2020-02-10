@@ -5,7 +5,7 @@ import './header.css'
 
 export default function Header() {
   return (
-    <div className="timesHeader flexColumn">
+    <div className="timesHeader">
       <div>
         <div className="timesHeader-box">
             <p>“Full-Stack JavaScript Developer”</p>
