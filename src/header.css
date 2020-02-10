@@ -1,4 +1,3 @@
-
 .timesHeader {
   padding-top: 10px;
   background-color: #f8f8f8;
@@ -59,7 +58,7 @@
   display: flex;
   justify-content: space-between;
   font-style: italic;
-  height: 22px;
+  height: 30px;
   padding: auto;
   background-color: #f8f8f8;
 }
@@ -72,9 +71,8 @@
   .timesHeader {
     width: 90%;
   }
-  
+
   .timesHeader-box {
     height: 100px;
   }
-
 }
