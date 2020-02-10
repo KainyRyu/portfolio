@@ -15,7 +15,7 @@ a:visited {
 .timesBody {
   display: flex;
   flex-flow: column;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 .timesProfile {
@@ -80,5 +80,4 @@ img {
   .timesProject {
     flex: 2;
   }
-
 }
