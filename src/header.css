@@ -59,6 +59,12 @@
   display: flex;
   justify-content: space-between;
   font-style: italic;
+  height: 25px;
+  background-color: #f8f8f8;
+}
+
+.highlight label a {
+  margin: 0 5px;
 }
 
 @media (min-width: 900px) {

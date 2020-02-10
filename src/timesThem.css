@@ -12,10 +12,6 @@ a:visited {
   font-size: 1.2em;
 }
 
-.highlight label a {
-  margin: 0 5px;
-}
-
 .timesBody {
   display: flex;
   flex-flow: column;
