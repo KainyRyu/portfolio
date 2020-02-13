@@ -37,7 +37,7 @@ export default function Header() {
         </div>
       </div>
       <div className="weather">
-        <h4>London {gmtToday}</h4>
+        <h4> {gmtToday()} /  LONDON</h4>
       </div>
     </div>
   );
@@ -45,8 +45,20 @@ export default function Header() {
 // toISOString()
 function gmtToday() {
   let today = new Date();
-  // let todayGMT = today.toISOString();
-  // let day = todayGTM.getDate;
-
-  return <span>{today.toISOString()}</span>;
+  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satuday'];
+  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let day = days[today.getUTCDay()];
+  let date = today.getUTCDate();
+  let month = months[today.getUTCMonth()];
+  let year = today.getUTCFullYear();
+ 
+return(
+  <span className="utc-time">
+    {/* <span>{todayGMT}</span> */}
+    <span>{day} </span>
+    <span> {date} </span>
+    <span> {month} </span>
+    <span> {year}</span>
+  </span>
+  );
 }

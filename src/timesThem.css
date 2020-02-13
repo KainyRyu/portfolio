@@ -50,6 +50,11 @@ a:visited {
   /* border-left: black solid 1px; */
   margin: 5px;
 }
+.utc-time {
+  display: flex;
+  margin: 0;
+  display: inline;
+}
 
 @media (min-width: 900px) {
   .timesbg {
