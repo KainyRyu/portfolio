@@ -31,6 +31,20 @@ a:visited {
   border: black solid 1px;
 }
 
+.summary {
+  text-align: justify;
+  margin: 2px;
+}
+
+.summary p {
+  font-size: 20px;
+}
+
+.summary p label {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .image {
   filter: grayscale(100%);
 }
@@ -50,6 +64,7 @@ a:visited {
   /* border-left: black solid 1px; */
   margin: 5px;
 }
+
 .utc-time {
   display: flex;
   margin: 0;
@@ -81,6 +96,17 @@ a:visited {
 
   .timesProfile {
     flex: 4;
+  }
+
+  .summary {
+    border-top: black solid 1px;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+  }
+
+  .summary p {
+    width: 48%;
   }
 
   .timesProject {
