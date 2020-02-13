@@ -8,12 +8,12 @@ export default function Project() {
     <div className="timesProject">
       <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
       <div className="topBorder">
-        <img className="image" src={project1} alt="recycling" />
         <a     
           href="https://nadinefresko.github.io/group_project/"
           rel="noopener noreferrer"
           target="_blank"
         >
+        <img className="image" src={project1} alt="recycling" />
           <h3 className="project-title">Mind Your Rubbish</h3>
         </a>
         <p className='project-summary'>
@@ -31,23 +31,23 @@ export default function Project() {
         >
         <img className="image" src={project2} alt="recycling" />
           <h3 className="project-title">Kodflix</h3>
+        </a>
         <p className='project-summary'>
              A film library built with <span className='strong'> ReactJS</span>. It gets the film datas from the
             back-end server which is required to use <span className='strong'>nodeJS, expressJS and
             mongoDB</span>. It is still on process.
         </p>
-        </a>
       </div>
       <div className="topBorder">
         {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
         <div className='placeholder'></div>
         <h3 className="project-title">WePair</h3>
+        {/* </a> */}
         <p className='project-summary'>
           An app specifically for developers who would like to pair programming.
           The user can reqest to another user if the date is available. This is
           a group project which just started.
         </p>
-        {/* </a> */}
       </div>
     </div>
   );
