@@ -8,8 +8,8 @@ export default function Project() {
     <div className="timesProject">
       <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
       <div className="topBorder">
-        <img src={project1} alt="recycling" />
-        <a
+        <img className="image" src={project1} alt="recycling" />
+        <a     
           href="https://nadinefresko.github.io/group_project/"
           rel="noopener noreferrer"
           target="_blank"
@@ -29,7 +29,7 @@ export default function Project() {
           rel="noopener noreferrer"
           target="_blank"
         >
-        <img src={project2} alt="recycling" />
+        <img className="image" src={project2} alt="recycling" />
           <h3 className="project-title">Kodflix</h3>
         <p className='project-summary'>
              A film library built with <span className='strong'> ReactJS</span>. It gets the film datas from the

@@ -2,7 +2,7 @@
   padding-top: 10px;
   background-color: #f8f8f8;
   width: 96%;
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   flex-flow: column;
   position: fixed;
@@ -10,38 +10,38 @@
   top: 0;
 }
 
-.timesHeader div {
+.timesHeader-top {
   display: flex;
   justify-content: space-between;
 }
 
 .timesHeader-box {
   border: black 1px solid;
-  width: 25%;
-  height: 70px;
   font-style: italic;
-  padding: 1%;
+  padding: auto 20%;
   text-align: center;
-}
-
-.logodiv {
-  height: auto;
-  width: 50%;
+  flex: 1;
 }
 
 .logo {
   border: none;
-  width: 90%;
+  flex: 2;
+  /* height: 100%; */
+
+  /* width: 30%; */
+}
+
+.logo img {
   margin: auto;
 }
 
 .timesHeader-box p {
   margin: auto;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
 }
 
-.email {
+/* .email {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   margin: 0;
@@ -50,21 +50,20 @@
   font-weight: bold;
   border: none;
   background-color: #f8f8f8;
-}
+} */
 
-.highlight {
-  border-top: black 2px solid;
-  border-bottom: black 1px solid;
-  display: flex;
-  justify-content: space-between;
+.weather {
+  border-top: black 1px solid;
+  border-bottom: black 2.5px solid;
   font-style: italic;
-  height: 30px;
+  height: 20px;
   padding: auto;
   background-color: #f8f8f8;
 }
 
-.highlight span a {
-  margin: 0 5px;
+.weather h4 {
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -72,7 +71,26 @@
     width: 90%;
   }
 
+  .timesHeader-top {
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+
   .timesHeader-box {
     height: 100px;
+  }
+
+  .timesHeader-box p {
+    font-size: 1.3em;
+  }
+  
+  /* .logo {
+    margin: 0;
+    padding: 0;
+  } */
+
+  .logo img {
+    max-height: 100px;
+
   }
 }
