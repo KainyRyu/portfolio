@@ -31,7 +31,12 @@ export default function Header() {
               LinkedIn
             </a>
             <br />
-            <a href="mailto:kainy2109@gmail.com">Contact</a>
+            <a href="mailto:kainy2109@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+                Contact
+            </a>
             {/* <CopyEmail /> */}
           </p>
         </div>
