@@ -7,37 +7,41 @@ export default function Header() {
   return (
     <div className="timesHeader">
       <div className="timesHeader-top">
-        <div className="timesHeader-box">
+        <div className="timesHeader-box title">
           <p>“Full-Stack JavaScript Developer”</p>
         </div>
         <div className="logo">
           <img src={logo} alt="Kainy Ryu" />
         </div>
-        <div className="timesHeader-box">
+        <div className="timesHeader-box links">
           <p>
-            <a
-              href="https://github.com/KainyRyu"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              GitHub
-            </a>
-            <br />
-            <a
-              href="https://www.linkedin.com/in/kainyryu/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-            <br />
-            <a href="mailto:kainy2109@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
+            <div>
+              <a
+                href="https://github.com/KainyRyu"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                Contact
-            </a>
+                GitHub 
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/kainyryu/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </div>
+            <div>
+              <a href="mailto:kainy2109@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                >
+                  Contact
+              </a>
             {/* <CopyEmail /> */}
+            </div>
           </p>
         </div>
       </div>

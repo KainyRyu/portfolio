@@ -3,34 +3,48 @@
   background-color: #f8f8f8;
   width: 96%;
   /* height: 100px; */
-  display: flex;
-  flex-flow: column;
+  /* display: flex; */
+  /* flex-flow: column; */
   position: fixed;
   z-index: 1;
   top: 0;
 }
 
-.timesHeader-top {
-  display: flex;
-  justify-content: space-between;
-}
-
 .timesHeader-box {
-  border: black 1px solid;
-  font-style: italic;
-  padding: auto 20%;
-  text-align: center;
-  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 .logo {
-  flex: 2;
+  width: 80%;
+  margin: 10px auto;
 }
 
 .timesHeader-box p {
-  margin: auto;
   font-size: 1em;
   font-weight: bold;
+  margin: 0 5%;
+}
+
+.links {
+  border-top: black 1px solid;
+}
+
+.links p {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.links p div {
+  margin: 0 5%;
+  font-size: 1.2em;
+}
+
+.title {
+  font-size: 1.1em;
 }
 
 /* .email {
@@ -64,12 +78,20 @@
     height: 130px;
   }
 
+
   .timesHeader-top {
+    display: flex;
+    justify-content: space-between;
     background-color: #f8f8f8;
     height: 100%;
   }
 
   .timesHeader-box {
+    border: black 1px solid;
+    font-style: italic;
+    padding: auto 20%;
+    text-align: center;
+    flex: 1;
     height: 100px;
     max-width: 250px;
     flex: 1;
@@ -77,6 +99,9 @@
 
   .timesHeader-box p {
     font-size: 1.3em;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: auto;
   }
 
   .logo {
