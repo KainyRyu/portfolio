@@ -32,12 +32,6 @@
  font-weight: bold;
 }
 
-.placeholder{
-    width: 99%;
-    height: 310px;
-    background-color: gray;
-    border: black solid 1px;
-}
 @media (min-width: 900px) {
     .placeholder {
         height: 200px;
