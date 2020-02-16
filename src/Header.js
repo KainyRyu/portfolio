@@ -45,8 +45,8 @@ export default function Header() {
           </p>
         </div>
       </div>
-      <div className="weather">
-        <h4> {gmtToday()} /  LONDON</h4>
+      <div className="today">
+        <h4> <span>London</span> <span>{gmtToday()}</span></h4>
       </div>
     </div>
   );
@@ -63,7 +63,6 @@ function gmtToday() {
  
 return(
   <span className="utc-time">
-    {/* <span>{todayGMT}</span> */}
     <span>{day} </span>
     <span> {date} </span>
     <span> {month} </span>

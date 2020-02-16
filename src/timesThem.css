@@ -65,12 +65,6 @@ a:visited {
   margin: 5px;
 }
 
-.utc-time {
-  display: flex;
-  margin: 0;
-  display: inline;
-}
-
 @media (min-width: 900px) {
   .timesbg {
     padding: 5%;

@@ -58,7 +58,7 @@
   background-color: #f8f8f8;
 } */
 
-.weather {
+.today {
   border-top: black 1px solid;
   border-bottom: black 2.5px solid;
   font-style: italic;
@@ -67,9 +67,16 @@
   background-color: #f8f8f8;
 }
 
-.weather h4 {
+.today h4 {
   margin: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.utc-time {
+  margin: 0;
+  display: inline;
 }
 
 @media (min-width: 900px) {
