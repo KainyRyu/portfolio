@@ -31,16 +31,14 @@ a:visited {
   border: black solid 1px;
 }
 
-.summary {
+.profile-summary {
   text-align: justify;
-  margin: 2px;
-}
-
-.summary p {
+  margin: 5px;
   font-size: 20px;
+  padding: 10px 5px;
 }
 
-.summary p label {
+.the-first {
   font-size: 25px;
   font-weight: bold;
 }
@@ -53,6 +51,7 @@ a:visited {
   text-align: center;
   font-style: italic;
   padding: 10px 0;
+  margin: 5px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -72,7 +71,7 @@ a:visited {
   .timesBody {
     display: flex;
     flex-flow: row;
-    margin-top: 90px;
+    margin-top: 120px;
   }
 
   .skills {
@@ -92,15 +91,12 @@ a:visited {
     flex: 4;
   }
 
-  .summary {
+  .profile-summary {
     border-top: black solid 1px;
-    display: flex;
-    justify-content: space-around;
+    border-bottom: black solid 1px;
+    margin: 5px;
     text-align: justify;
-  }
-
-  .summary p {
-    width: 48%;
+    font-size: 21px;
   }
 
   .timesProject {
