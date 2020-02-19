@@ -6,7 +6,7 @@ export default function Profile() {
   return (
     <div className="timesProfile flexColumn">
       <img className="image" src={profileImg} alt="Me" />
-      <div className="summary">
+      <div className="project-summary">
         <p>
           <label className="theFirst">A</label> full-stack developer keen to
           learn new skills and collaborate with others. A firm believer in
