@@ -19,6 +19,7 @@
 .logo {
   width: 80%;
   margin: 10px auto;
+  max-width: 250px;
 }
 
 .timesHeader-box p {
@@ -79,7 +80,7 @@
   display: inline;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .timesHeader {
     width: 90%;
     height: 130px;
