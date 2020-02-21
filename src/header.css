@@ -32,15 +32,11 @@
   border-top: black 1px solid;
 }
 
-.links p {
+.links {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   margin: 0;
-}
-
-.links p div {
-  margin: 0 5%;
   font-size: 1.2em;
 }
 
@@ -96,20 +92,16 @@
 
   .timesHeader-box {
     border: black 1px solid;
-    font-style: italic;
     padding: auto 20%;
-    text-align: center;
-    flex: 1;
+    margin: auto;
     height: 100px;
     max-width: 250px;
-    flex: 1;
-  }
-
-  .timesHeader-box p {
+    text-align: center;
     font-size: 1.3em;
+    font-style: italic;
     flex-flow: column;
     justify-content: space-around;
-    margin: auto;
+    flex: 1;
   }
 
   .logo {

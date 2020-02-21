@@ -33,15 +33,34 @@
 }
 
 @media (min-width: 900px) {
-    .placeholder {
-        height: 200px;
+
+    .project-first, 
+    .project-second, 
+    .project-third {
+        padding: 20px;
+        flex: 1;
+    }
+    .project-second {
+        border-left: black 1px solid;
+        border-right: black 1px solid;
+        width: 100%;
     }
 
     .project-label {
+        background: linear-gradient(90deg, rgb(177, 177, 177) 35%, rgba(248,248,248,1) 100%);
         font-size: 1.4em;
+        text-align: left;
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
     }
     
     .project-label-span {
         font-size: 1.1em;
     }
+
+    .project-summary {
+        border: none;
+    }
+
 }

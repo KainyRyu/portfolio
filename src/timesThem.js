@@ -11,11 +11,18 @@ export default function Times () {
             <Header />
             <div className='timesBody'>
                 <Profile />
-                <h1 className='skills' >
-                    “Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” 
-                </h1>
-                <Project />
+                <div className="body-right">
+                    <h1 className='skills' >
+                        “Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” 
+                    </h1>
+                    <div className="activities">
+
+                    </div>
+
+                </div>
             </div>
+            <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
+            <Project />
         </div>
     )
 }

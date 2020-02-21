@@ -6,9 +6,9 @@ import "./Project.css";
 
 export default function Project() {
   return (
+    <>
     <div className="timesProject">
-      <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
-      <div className="topBorder">
+      <div className="project-first">
         <a     
           href="https://nadinefresko.github.io/group_project/"
           rel="noopener noreferrer"
@@ -24,7 +24,7 @@ export default function Project() {
             feel free to check your recycling skill.
         </p>
       </div>
-      <div className="topBorder">
+      <div className="project-second">
         <a
           href="https://kodflix-kainy.herokuapp.com"
           rel="noopener noreferrer"
@@ -33,13 +33,13 @@ export default function Project() {
         <img className="image" src={project2} alt="recycling" />
           <h3 className="project-title">Kodflix</h3>
         </a>
-        <p className='project-summary'>
+        <p className='project-summary project-mid'>
              A film library built with <span className='strong'> ReactJS</span>. It gets the film datas from the
             back-end server which is required to use <span className='strong'>nodeJS, expressJS and
             mongoDB</span>. It is still on process.
         </p>
       </div>
-      <div className="topBorder">
+      <div className="project-third">
         {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
         <img className="image" src={project3} alt="We-Pair" />
         <h3 className="project-title">WePair</h3>
@@ -51,5 +51,6 @@ export default function Project() {
         </p>
       </div>
     </div>
+    </>
   );
 }

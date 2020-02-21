@@ -14,8 +14,6 @@ export default function Header() {
           <img src={logo} alt="Kainy Ryu" />
         </div>
         <div className="timesHeader-box links">
-          <p>
-            <div>
               <a
                 href="https://github.com/KainyRyu"
                 rel="noopener noreferrer"
@@ -23,8 +21,6 @@ export default function Header() {
               >
                 GitHub 
               </a>
-            </div>
-            <div>
               <a
                 href="https://www.linkedin.com/in/kainyryu/"
                 rel="noopener noreferrer"
@@ -32,8 +28,6 @@ export default function Header() {
               >
                 LinkedIn
               </a>
-            </div>
-            <div>
               <a href="mailto:kainy2109@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -41,8 +35,6 @@ export default function Header() {
                   Contact
               </a>
             {/* <CopyEmail /> */}
-            </div>
-          </p>
         </div>
       </div>
       <div className="today">
