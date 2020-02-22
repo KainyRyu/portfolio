@@ -19,7 +19,7 @@ export default function Project() {
         </a>
         <p className='project-summary'>
             It works better with computer. It has a recycling
-            <span className='strong'> drag and drop game</span> and using <span className='strong'> svg file </span>for devide each London borough.
+            <span className='strong'> drag and drop game</span> and using <span className='strong'> svg file </span>to separte each London borough.
             Using <span className='strong'> twiter API</span> for updating Recycling & Waste World Magazine. Please
             feel free to check your recycling skill.
         </p>
