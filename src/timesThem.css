@@ -47,6 +47,8 @@ a:visited {
 
 .image {
   filter: grayscale(100%);
+  border: 1px solid black;
+  width: 99%;
 }
 
 .skills {
@@ -54,14 +56,17 @@ a:visited {
   font-style: italic;
   padding: 10px 0;
   margin: 5px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 .timesProject {
   display: flex;
   flex-flow: column;
   margin: 5px;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 700px) {
@@ -73,13 +78,12 @@ a:visited {
   .timesBody {
     display: flex;
     flex-flow: row;
-    margin-top: 125px;
+    margin-top: 130px;
   }
   
   .timesProfile {
     flex: 3;
     padding-right: 20px;
-    border-right: 1px solid black;
   }
   
   .body-right {
@@ -87,39 +91,47 @@ a:visited {
     display: flex;
     flex-flow: column;
   }
-
-  .skills {
-    margin: 5px 10px 0 30px;
-    padding: 20 20;
-    font-size: 1.5em;
-    border-top: none;
-    border-bottom: none;
-    border-bottom: 1px solid black;
-    line-height: 50px;
-  }
-
-  .activities {
-
-  }
-
+  
   .profile-summary {
     border-top: black solid 1px;
     border-bottom: black solid 1px;
     margin: 5px;
     text-align: justify;
-    font-size: 21px;
+    font-size: 19px;
     display: flex;
     justify-content: space-between;
   }
-
+  
   .profile-summary-p {
     width: 47%;
+    
+  }
+  
+  .skills {
+    margin: 5px 5%px;
+    padding: 20px 20px;
+    font-size: 1.5em;
+    border: 2px solid black;
+    line-height: 50px;
+  }
 
+  .activities {
+    text-align: center;
+    margin: 0 5%;
   }
 
   .timesProject {
     flex-flow: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .skills {
+    font-size: 2em;
+  }
+  .timesBody {
+    margin-top: 125px;
   }
 }
 

@@ -14,7 +14,7 @@ export default function Project() {
           rel="noopener noreferrer"
           target="_blank"
         >
-        <img className="image" src={project1} alt="recycling" />
+        <img className="image project-img" src={project1} alt="recycling" />
           <h3 className="project-title">Mind Your Rubbish</h3>
         </a>
         <p className='project-summary'>
@@ -30,7 +30,7 @@ export default function Project() {
           rel="noopener noreferrer"
           target="_blank"
         >
-        <img className="image" src={project2} alt="recycling" />
+        <img className="image project-img" src={project2} alt="recycling" />
           <h3 className="project-title">Kodflix</h3>
         </a>
         <p className='project-summary project-mid'>
@@ -41,12 +41,12 @@ export default function Project() {
       </div>
       <div className="project-third">
         {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
-        <img className="image" src={project3} alt="We-Pair" />
+        <img className="image project-img" src={project3} alt="We-Pair" />
         <h3 className="project-title">WePair</h3>
         {/* </a> */}
         <p className='project-summary'>
-          An app specifically for developers who would like to pair programming.
-          The user can reqest to another user if the date is available. This is
+          An app specifically for developers who would like a pair programming.
+          The user can search for the languages and locations then reqest to another user if the date is available. This is
           a group project which just started.
         </p>
       </div>

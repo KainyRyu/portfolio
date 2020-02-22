@@ -2,6 +2,7 @@ import React from 'react';
 import './timesThem.css';
 import Profile from './profile'
 import Header from './Header';
+import Activities from './Activities';
 import Project from './project/Projects';
 
 
@@ -15,13 +16,10 @@ export default function Times () {
                     <h1 className='skills' >
                         “Skills :  JavaScript, ReactJS, NodeJS, mongoDB, Express, HTML5, CSS3, Bootstrap3 and more are coming..” 
                     </h1>
-                    <div className="activities">
-
-                    </div>
-
+                    <Activities />
                 </div>
             </div>
-            <label className='project-label'>PROJECTS, <span className='project-label-span'>click the text to see my works</span></label>
+            <h1 className='project-label'>PROJECTS;</h1> <span className='project-label-span'>click the <span className="underline">iamages</span> or the <span className="underline">underlined text</span> to see my works.</span>
             <Project />
         </div>
     )
