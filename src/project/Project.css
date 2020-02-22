@@ -1,3 +1,7 @@
+.project-label-container {
+    margin-bottom: 30px;
+}
+
 .project-label {
     text-align: left;
     margin: 30px 0 0 0;
@@ -48,13 +52,12 @@
     .project-label-container {
         background: linear-gradient(90deg, rgb(177, 177, 177) 35%, rgba(248,248,248,1) 100%);
         padding: 5px 0;
+        margin-bottom: 0;
     }
 
     .project-label {
         font-size: 1.4em;
         text-align: left;
-        margin-top: 10px;
-        margin-bottom: 5px;
         padding: 10px;
         display: inline;
         border: none;
