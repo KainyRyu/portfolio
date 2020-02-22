@@ -19,7 +19,13 @@ export default function Times () {
                     <Activities />
                 </div>
             </div>
-            <h1 className='project-label'>PROJECTS;</h1> <span className='project-label-span'>click the <span className="underline">iamages</span> or the <span className="underline">underlined text</span> to see my works.</span>
+            <div className="project-label-container">
+                <h1 className='project-label'>PROJECTS;</h1> 
+                <span className='project-label-span'>click the 
+                    <span className="underline"> iamages</span> or the 
+                    <span className="underline"> underlined text</span> to see my works.
+                </span>
+            </div>
             <Project />
         </div>
     )

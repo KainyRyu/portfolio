@@ -45,14 +45,19 @@
         width: 100%;
     }
     
-    .project-label {
+    .project-label-container {
         background: linear-gradient(90deg, rgb(177, 177, 177) 35%, rgba(248,248,248,1) 100%);
+        padding: 5px 0;
+    }
+
+    .project-label {
         font-size: 1.4em;
         text-align: left;
         margin-top: 10px;
         margin-bottom: 5px;
         padding: 10px;
-        width: 100%;
+        display: inline;
+        border: none;
     }
     
     .project-label-span {
