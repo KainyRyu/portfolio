@@ -18,9 +18,9 @@ export default function Project() {
           <h3 className="project-title">Mind Your Rubbish</h3>
         </a>
         <p className='project-summary'>
-            It works better with computer. It has a recycling
-            <span className='strong'> drag and drop game</span> and using <span className='strong'> svg file </span>to separte each London borough.
-            Using <span className='strong'> twiter API</span> for updating Recycling & Waste World Magazine. Please
+          Best to test on a desktop view. It has a recycling 
+            <span className='strong'> drag and drop game</span> and using <span className='strong'> svg files </span>to separate each London borough.
+            Using <span className='strong'> Twitter API</span> for updating Recycling & Waste World Magazine. Please
             feel free to check your recycling skill.
         </p>
       </div>
@@ -36,7 +36,7 @@ export default function Project() {
         <p className='project-summary project-mid'>
              A film library built with <span className='strong'> ReactJS</span>. It gets the film datas from the
             back-end server which is required to use <span className='strong'>nodeJS, expressJS and
-            mongoDB</span>. It is still on process.
+            mongoDB</span>. It is ongoin program.
         </p>
       </div>
       <div className="project-third">
