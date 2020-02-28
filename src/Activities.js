@@ -17,7 +17,7 @@ export default function Activities () {
             </div>
             <div className="activities-subject activity_third">
                 <h3> Running Workshops </h3>
-                Kodiri : Running a <a href="https://youtu.be/GAkdWTmPw9Q"> live streaming workshops</a> about react advanced skills.
+                Kodiri : Running a <a href="https://youtu.be/GAkdWTmPw9Q" target="_blank"> live streaming workshops</a> about react advanced skills.
                 </div>
         </div>
     )
