@@ -15,6 +15,10 @@ export default function Activities () {
                 / <br />
                 Kodiri : Volunteering as a co-organiser running meetup events and helping people with the platform and HTML, CSS and JS.
             </div>
+            <div className="activities-subject activity_third">
+                <h3> Running Workshops </h3>
+                Kodiri : Running a <a href="https://youtu.be/GAkdWTmPw9Q"> live streaming workshops</a> about react advanced skills.
+                </div>
         </div>
     )
 }
