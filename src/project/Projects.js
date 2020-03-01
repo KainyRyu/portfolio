@@ -40,12 +40,16 @@ export default function Project() {
         </p>
       </div>
       <div className="project-third">
-        {/* <a href=''  rel="noopener noreferrer" target='_blank'> */}
+        <a
+          href="https://we-pair.herokuapp.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
         <img className="image project-img" src={project3} alt="We-Pair" />
         <h3 className="project-title">WePair</h3>
-        {/* </a> */}
+        </a>
         <p className='project-summary'>
-          An app specifically for developers who would like a pair programming.
+          An app specifically for developers who would like to pair programming.
           The user can search for the languages and locations then reqest to another user if the date is available. This is
           a group project which just started.
         </p>
