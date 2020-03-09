@@ -89,6 +89,7 @@
 
   .timesHeader-top {
     display: flex;
+    flex-flow: row;
     justify-content: space-between;
     background-color: #f8f8f8;
     height: 100%;
