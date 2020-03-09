@@ -10,7 +10,7 @@ export default function Header() {
           <p className="title">“Full-Stack JavaScript Developer”</p>
         </div>
         <div className="logo-box">
-          <img src={logo} alt="Kainy Ryu" />
+          <img className="logo" src={logo} alt="Kainy Ryu" />
         </div>
         <div className="timesHeader-box links">
           <a

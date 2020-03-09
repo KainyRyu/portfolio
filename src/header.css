@@ -24,16 +24,14 @@
 }
 
 .logo-box {
-  /* align-self: center; */
-  /* width: 80%; */
-  /* margin: 10px auto; */
-  max-width: 100%;
-  padding: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
-.logo-box img {
-  margin: 10px;
-  align-self: center;
+.logo {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
 }
 
 .title {
@@ -44,9 +42,6 @@
 
 .links {
   border-top: black 1px solid;
-}
-
-.links {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
