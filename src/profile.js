@@ -11,7 +11,7 @@ export default function Profile() {
           <label className="the-first">A</label> full-stack developer keen to learn new skills and collaborate with others. A firm believer in discipline and self-driven process in learning. working well in specialist teams in exciting and continually developing environments. 
         </div>
         <div className="profile-summary-p">
-       I am exposed to multicultural points of view integrated with a sociable and tactful personality, always enjoying the challenge of working under pressure either independently or as a member of a team within an agile team.
+          I am exposed to multicultural points of view integrated with a sociable and tactful personality, always enjoying the challenge of working under pressure either independently or as a member of a team within an agile team.
         </div>
         {/* <p>Started coding for fun and now I am more serious </p> */}
       </div>

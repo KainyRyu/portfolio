@@ -1,40 +1,38 @@
 import React from "react";
 import logo from "./images/kainylogo.svg";
-import CopyEmail from "./CopyEmail";
 import "./header.css";
 
 export default function Header() {
   return (
     <div className="timesHeader">
       <div className="timesHeader-top">
-        <div className="timesHeader-box title">
-          <p>“Full-Stack JavaScript Developer”</p>
+        <div className="timesHeader-box">
+          <p className="title">“Full-Stack JavaScript Developer”</p>
         </div>
-        <div className="logo">
+        <div className="logo-box">
           <img src={logo} alt="Kainy Ryu" />
         </div>
         <div className="timesHeader-box links">
-              <a
-                href="https://github.com/KainyRyu"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub 
-              </a>
-              <a
-                href="https://www.linkedin.com/in/kainyryu/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-              <a href="mailto:kainy2109@gmail.com"
-                rel="noopener noreferrer"
-                target="_blank"
-                >
-                  Contact
-              </a>
-            {/* <CopyEmail /> */}
+          <a
+            href="https://github.com/KainyRyu"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub 
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kainyryu/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a href="mailto:kainy2109@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+              Contact
+          </a>
         </div>
       </div>
       <div className="today">
@@ -43,7 +41,7 @@ export default function Header() {
     </div>
   );
 }
-// toISOString()
+
 function gmtToday() {
   let today = new Date();
   let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satuday'];
@@ -53,12 +51,12 @@ function gmtToday() {
   let month = months[today.getUTCMonth()];
   let year = today.getUTCFullYear();
  
-return(
-  <span className="utc-time">
-    <span>{day} </span>
-    <span> {date} </span>
-    <span> {month} </span>
-    <span> {year}</span>
-  </span>
+  return(
+    <span className="utc-time">
+      <span>{day} </span>
+      <span> {date} </span>
+      <span> {month} </span>
+      <span> {year}</span>
+    </span>
   );
 }
