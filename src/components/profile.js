@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "./images/bwbg.gif";
+import profileImg from "../images/bwbg.gif";
 import "./timesThem.css";
 
 export default function Profile() {

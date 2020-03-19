@@ -1,5 +1,5 @@
 import React from "react";
-import Times from "./timesThem";
+import Times from "./components/timesThem";
 import "./App.css";
 
 function App() {

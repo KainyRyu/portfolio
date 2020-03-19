@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./images/kainylogo.svg";
+import logo from "../images/kainylogo.svg";
 import "./header.css";
 
 export default function Header() {
