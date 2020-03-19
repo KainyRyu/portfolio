@@ -1,7 +1,7 @@
 import React from "react";
-// import project1 from "../../images/project1.png";
-// import project2 from "../../images/project2.png";
-// import project3 from "../../images/project3.png";
+import project1 from "../../images/project1.png";
+import project2 from "../../images/project2.png";
+import project3 from "../../images/project3.png";
 import "./Project.css";
 
 export default function Project() {
@@ -14,7 +14,7 @@ export default function Project() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            {/* <img className="image project-img" src={project1} alt="recycling" /> */}
+            <img className="image project-img" src={project1} alt="recycling" />
             <h3 className="project-title">Mind Your Rubbish</h3>
           </a>
           <p className="project-summary">
@@ -32,7 +32,7 @@ export default function Project() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            {/* <img className="image project-img" src={project2} alt="recycling" /> */}
+            <img className="image project-img" src={project2} alt="recycling" />
             <h3 className="project-title">Kodflix</h3>
           </a>
           <p className="project-summary project-mid">
@@ -48,7 +48,7 @@ export default function Project() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            {/* <img className="image project-img" src={project3} alt="We-Pair" /> */}
+            <img className="image project-img" src={project3} alt="We-Pair" />
             <h3 className="project-title">WePair</h3>
           </a>
           <p className="project-summary">
