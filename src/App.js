@@ -1,9 +1,9 @@
 import React from 'react';
-import './timesThem.css';
-import Profile from './profile'
-import Header from './Header';
-import Activities from './activities/Activities';
-import Project from './project/Projects';
+import './components/timesThem.css';
+import Profile from './components/profile'
+import Header from './components/Header';
+import Activities from './components/activities/Activities';
+import Project from './components/project/Projects';
 
 function App() {
   return (
