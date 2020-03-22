@@ -1,5 +1,4 @@
 import React from 'react';
-import './components/timesThem.css';
 import Profile from './components/profile'
 import Header from './components/Header';
 import Activities from './components/activities/Activities';

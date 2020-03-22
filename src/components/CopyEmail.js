@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './timesThem.css';
+
  
 export default class CopyEmail extends Component {
   copyCodeToClipboard = str => {

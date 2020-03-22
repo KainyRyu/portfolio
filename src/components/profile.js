@@ -1,6 +1,6 @@
 import React from "react";
 import profileImg from "../images/bwbg.gif";
-import "./timesThem.css";
+import '../App.css';
 
 export default function Profile() {
   return (
