@@ -36,16 +36,18 @@
 
 @media (min-width: 700px) {
     
-    .project-first, 
-    .project-second, 
-    .project-third {
+    #project-first, 
+    #project-second, 
+    #project-third,
+    #project-fourth {
         padding: 20px;
         flex: 1;
     }
     
-    .project-second {
+    #project-second, 
+    #project-third,
+    #project-fourth {
         border-left: black 1px dotted;
-        border-right: black 1px dotted;
         width: 100%;
     }
     

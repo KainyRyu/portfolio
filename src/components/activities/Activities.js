@@ -7,7 +7,7 @@ export default function Activities () {
             <h1>Activities</h1>
             <div className="activities-subject activity_first">
                 <h3> Hackathon: UK vs COVID-19 </h3>
-                tell my GP: Connecting the patients and GP surgeries to track COVID-19 symptoms daily. To see more check 
+                <a href="#project-fourth">tell my GP</a>: Connecting the patients and GP surgeries to track COVID-19 symptoms daily. To see more check 
                     <a href="https://medium.com/ukvscovidhack/tell-my-gp-63de96231e38" target="_blank"> Medium post</a>
             </div>
             <div className="activities-subject activity_first">

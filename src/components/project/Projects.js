@@ -2,13 +2,14 @@ import React from "react";
 import project1 from "../../images/project1.png";
 import project2 from "../../images/project2.png";
 import project3 from "../../images/project3.png";
+import project4 from "../../images/project4.gif";
 import "./Project.css";
 
 export default function Project() {
   return (
     <>
       <div className="timesProject">
-        <div className="project-first">
+        <div id="project-first">
           <a
             href="https://nadinefresko.github.io/group_project/"
             rel="noopener noreferrer"
@@ -26,7 +27,7 @@ export default function Project() {
             your recycling skill.
           </p>
         </div>
-        <div className="project-second">
+        <div id="project-second">
           <a
             href="https://kodflix-kainy.herokuapp.com"
             rel="noopener noreferrer"
@@ -42,7 +43,7 @@ export default function Project() {
             It is ongoin program.
           </p>
         </div>
-        <div className="project-third">
+        <div id="project-third">
           <a
             href="https://we-pair.herokuapp.com"
             rel="noopener noreferrer"
@@ -56,6 +57,19 @@ export default function Project() {
             programming. The user can search for the languages and locations
             then reqest to another user if the date is available. This is a
             group project which just started.
+          </p>
+        </div>
+        <div id="project-fourth">
+          <a
+            href="http://relieved-process234567.surge.sh/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img className="image project-img" src={project4} alt="tell my GP" />
+            <h3 className="project-title">tell my GP</h3>
+          </a>
+          <p className="project-summary">
+            Using Gatsby, React, Material UI and Firebase.
           </p>
         </div>
       </div>
