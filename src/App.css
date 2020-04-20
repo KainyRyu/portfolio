@@ -19,14 +19,6 @@
   height: 50px;
 }
 
-.background {
-  margin: 20px auto;
-  width: 90vw;
-  height: 90vh;
-  border: 1px black solid;
-  border-radius: 20px;
-}
-
 .timesbg {
   background-color: #f8f8f8;
   margin: 0;
