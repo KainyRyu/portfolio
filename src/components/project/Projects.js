@@ -69,7 +69,7 @@ export default function Project() {
             <h3 className="project-title">tell my GP</h3>
           </a>
           <p className="project-summary">
-            Using Gatsby, React, Material UI and Firebase.
+          Connecting the patients and GP surgeries to track COVID-19 symptoms daily using <span className="strong">Gatsby, React, Material UI and Firebase.</span>
           </p>
         </div>
       </div>
