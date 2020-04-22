@@ -11,7 +11,6 @@ export default function Activities () {
                     <a 
                         href="#project-fourth"
                         rel="noopener noreferrer"
-                        target="_blank"
                     > tell my GP</a>
                     , and you'll see more on the
                     <a 
