@@ -2,6 +2,7 @@
   /* text-align: center;
   box-sizing: border-box; */
   background: #F8F8F8;
+  color: #222222;
 }
 .fixedTop {
   top: 0;
@@ -30,7 +31,7 @@
 
 a,
 a:visited {
-  color: black;
+  color: #222222;
   /* text-decoration-line: none; */
   font-size: 1.2em;
 }
