@@ -13,7 +13,7 @@ function App() {
           <Profile />
           <div className="body-right">
             <h1 className="skills">
-              “Skills : JavaScript, ReactJS, GatsbyJS, NodeJS, mongoDB, Express,
+              “Skills : JavaScript, ReactJS, GatsbyJS, Firebase, NodeJS, mongoDB, Express,
               HTML5, CSS3, Bootstrap3, Material-UI and more are coming..”
             </h1>
             <Activities />
