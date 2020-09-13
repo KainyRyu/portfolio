@@ -1,7 +1,7 @@
 .timesHeader {
   padding-top: 10px;
   background-color: #f8f8f8;
-  width: 96%;
+  width: 100%;
   /* height: 100px; */
   /* display: flex; */
   /* flex-flow: column; */
@@ -81,7 +81,7 @@
   display: inline;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1012px) {
   .timesHeader {
     width: 90%;
     height: 130px;

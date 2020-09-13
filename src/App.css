@@ -98,15 +98,24 @@ a:visited {
 }
 
 @media (min-width: 768px) {
+}
 
+@media (min-width: 1012px) {
+  .skills {
+    font-size: 2em;
+  }
+  /* .timesBody {
+  } */
+  
   .timesbg {
     padding: 5%;
   }
-
+  
   .timesBody {
     display: flex;
     flex-flow: row;
-    margin-top: 130px;
+    margin-top: 125px;
+    /* margin-top: 130px; */
   }
   
   .timesProfile {
@@ -150,15 +159,6 @@ a:visited {
   .timesProject {
     flex-flow: row;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 1012px) {
-  .skills {
-    font-size: 2em;
-  }
-  .timesBody {
-    margin-top: 125px;
   }
 }
 
