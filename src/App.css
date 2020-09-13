@@ -68,7 +68,7 @@ a:visited {
 }
 
 .image {
-  filter: grayscale(100%);
+  filter: grayscale(90%);
   border: 1px solid black;
   width: 99%;
 }
@@ -76,7 +76,7 @@ a:visited {
 .skills {
   text-align: center;
   font-style: italic;
-  padding: 10px 0;
+  padding: 10px 15px;
   margin: 5px;
   border: 1px solid black;
 }
@@ -97,7 +97,7 @@ a:visited {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
 
   .timesbg {
     padding: 5%;
@@ -153,7 +153,7 @@ a:visited {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1012px) {
   .skills {
     font-size: 2em;
   }
@@ -162,7 +162,7 @@ a:visited {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   
   .timesBody {
       margin-top: 105px;
