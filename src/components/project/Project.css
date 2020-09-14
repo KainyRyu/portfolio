@@ -9,7 +9,7 @@
 }
 
 .project-label-span {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
@@ -31,7 +31,7 @@
         }
 
     .dr-wrapper p {
-        font-size: 1.3em;
+        font-size: 1.3rem;
         /* padding: 5%; */
     }
 
@@ -50,14 +50,14 @@
     padding: 10px 0;
     border-bottom: #222222 1px dotted;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .strong {
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1012px) {
     
     #project-first, 
     #project-second, 
@@ -81,7 +81,7 @@
     }
 
     .project-label {
-        font-size: 1.3em;
+        font-size: 1.3rem;
         text-align: left;
         padding: 10px;
         display: inline;
@@ -89,7 +89,7 @@
     }
     
     .project-label-span {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     .dr-wrapper {
@@ -104,7 +104,7 @@
         flex: 1;
         /* width: 100%; */
         padding: 0 3%;
-        /* font-size: 1.2em; */
+        /* font-size: 1.2rem; */
     }
 
     /* .dr-text-wrapper p {

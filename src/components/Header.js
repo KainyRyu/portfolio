@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../images/kainylogo.svg";
+import github from "../images/logos/github.png"
+import gmail from "../images/logos/gmail.png"
+import linkedin from "../images/logos/linkedin.png"
 import "./header.css";
 
 export default function Header() {
@@ -18,20 +21,21 @@ export default function Header() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            GitHub 
+            <img className="contact-logo" src={github} alt="github" />: GitHub 
           </a>
           <a
             href="https://www.linkedin.com/in/kainyryu/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            LinkedIn
+            <img className="contact-logo" src={linkedin} alt="linkedin" />: LinkedIn
           </a>
           <a href="mailto:kainy2109@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
             >
-              Contact
+            <img className="contact-logo" src={gmail} alt="gmail" />
+              : Contact
           </a>
         </div>
       </div>

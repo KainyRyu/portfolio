@@ -22,12 +22,9 @@ function App() {
         <div className="project-label-container">
           <h1 className="project-label">PROJECTS;</h1>
           <span className="project-label-span">
-            click the
-            <span className="underline"> images</span> or the
-            <span className="underline"> underlined text</span> to see my work.
+            click the <span className="underline">images</span> or the <span className="underline">underlined text</span> to see my work.
           </span>
         </div>
-        <div></div>
         <Project />
       </div>
     </div>

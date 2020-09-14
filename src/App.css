@@ -23,7 +23,7 @@
 .timesbg {
   background-color: #f8f8f8;
   margin: 0;
-  padding: 2%;
+  padding: 0 2vw;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
   flex-flow: column;
@@ -33,7 +33,7 @@ a,
 a:visited {
   color: #222222;
   /* text-decoration-line: none; */
-  font-size: 1.2em;
+  font-size: 1.3rem;
 }
 
 .timesBody {
@@ -52,24 +52,24 @@ a:visited {
   width: 99%;
   height: auto;
   margin: 5px auto;
-  border: black solid 1px;
+  border: #222222 solid 1px;
 }
 
 .profile-summary {
   text-align: justify;
   margin: 5px;
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 10px 5px;
 }
 
 .the-first {
-  font-size: 25px;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 .image {
   filter: grayscale(90%);
-  border: 1px solid black;
+  border: 1px solid #222222;
   width: 99%;
 }
 
@@ -78,7 +78,7 @@ a:visited {
   font-style: italic;
   padding: 10px 15px;
   margin: 5px;
-  border: 1px solid black;
+  border: 1px solid #222222;
 }
 
 .timesProject {
@@ -102,7 +102,7 @@ a:visited {
 
 @media (min-width: 1012px) {
   .skills {
-    font-size: 2em;
+    font-size: 2rem;
   }
   /* .timesBody {
   } */
@@ -130,11 +130,11 @@ a:visited {
   }
   
   .profile-summary {
-    border-top: black solid 1px;
-    border-bottom: black solid 1px;
+    border-top: #222222 solid 1px;
+    border-bottom: #222222 solid 1px;
     margin: 5px;
     text-align: justify;
-    font-size: 19px;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
   }
@@ -146,8 +146,8 @@ a:visited {
   .skills {
     margin: 5px 5%px;
     padding: 20px 20px;
-    font-size: 1.5em;
-    border: 2px solid black;
+    font-size: 1.5rem;
+    border: 2px solid #222222;
     line-height: 50px;
   }
 
