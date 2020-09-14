@@ -27,7 +27,6 @@ function App() {
             <span className="underline"> underlined text</span> to see my work.
           </span>
         </div>
-        <div></div>
         <Project />
       </div>
     </div>
