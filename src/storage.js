@@ -11,7 +11,7 @@ function AComponent() {
         <div className="fixedTop">
           <div className="inline">
             <h1>Kainy Ryu</h1>
-            <h2>Full Stack JavaScript(React) Engineer</h2>
+            <h2>Front-End JavaScript(React) Engineer</h2>
           </div>
           <div className="inline links">
             <a
