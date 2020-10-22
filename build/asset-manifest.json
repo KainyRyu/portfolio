@@ -5,13 +5,13 @@
     "main.js.map": "/portfolio/static/js/main.e76b5bd5.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.ab757192.chunk.js": "/portfolio/static/js/2.ab757192.chunk.js",
-    "static/js/2.ab757192.chunk.js.map": "/portfolio/static/js/2.ab757192.chunk.js.map",
+    "static/js/2.dc15b72b.chunk.js": "/portfolio/static/js/2.dc15b72b.chunk.js",
+    "static/js/2.dc15b72b.chunk.js.map": "/portfolio/static/js/2.dc15b72b.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a06baae06e5657c82876da0854227d3c.js": "/portfolio/precache-manifest.a06baae06e5657c82876da0854227d3c.js",
+    "precache-manifest.67081936c5492ac57aa904b0b1fa8b8f.js": "/portfolio/precache-manifest.67081936c5492ac57aa904b0b1fa8b8f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.6fbae36b.chunk.css.map": "/portfolio/static/css/main.6fbae36b.chunk.css.map",
-    "static/js/2.ab757192.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ab757192.chunk.js.LICENSE.txt",
+    "static/js/2.dc15b72b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dc15b72b.chunk.js.LICENSE.txt",
     "static/media/bwbg.gif": "/portfolio/static/media/bwbg.8722a41c.gif",
     "static/media/kainylogo.svg": "/portfolio/static/media/kainylogo.faeec548.svg",
     "static/media/project1.png": "/portfolio/static/media/project1.ab9dfd58.png",
@@ -22,7 +22,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.ab757192.chunk.js",
+    "static/js/2.dc15b72b.chunk.js",
     "static/css/main.6fbae36b.chunk.css",
     "static/js/main.e76b5bd5.chunk.js"
   ]
