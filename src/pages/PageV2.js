@@ -1,5 +1,14 @@
 import React from 'react';
+import Styled from 'styled-component';
 
 export default function PageV2() {
-  return <div></div>;
+  return (
+    <Body>
+      <h1>the second concept</h1>
+    </Body>
+  );
 }
+
+const Body = Styled.div`
+width: 1000px;
+`;

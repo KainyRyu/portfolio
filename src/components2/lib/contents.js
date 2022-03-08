@@ -1,17 +1,19 @@
-const EXPERIENCE = [{
-  company: 'Joara',
-  url:'https://www.joara.com/',
-  location: 'S. Korea'
-  ,activities: [
-    '- Continuously improve MAU 687k web applications',
-    '- Participate in maintaining website as well as developing new features',
-    '- Cooperate closely with Product, Design and Backend Development to spec, build, test and deploy new features',
-    '- Working with the team in an Agile environment',
-    '- Implementing good practices(airbnb style guide, pair programming, etc..)',
-  ],
-}];
+export const EXPERIENCE = [
+  {
+    company: 'Joara',
+    url: 'https://www.joara.com/',
+    location: 'S. Korea',
+    activities: [
+      '- Continuously improve MAU 687k web applications',
+      '- Participate in maintaining website as well as developing new features',
+      '- Cooperate closely with Product, Design and Backend Development to spec, build, test and deploy new features',
+      '- Working with the team in an Agile environment',
+      '- Implementing good practices(airbnb style guide, pair programming, etc..)',
+    ],
+  },
+];
 
-const PROJECTS = [
+export const PROJECTS = [
   {
     subject: 'Sub-Application Renewal Project',
     period: 'Mar. 2022 - now',
@@ -29,11 +31,11 @@ const PROJECTS = [
   {
     subject: 'Adding easy payment gateways',
     period: 'Nov. 2021',
-    summary: ,
+    summary: '',
     details: [
       '- Using localStorage to contemporary save payment information.',
       '- Call internal API when the easy payment send a response',
-      '- Setting BridgePage for the next process'
+      '- Setting BridgePage for the next process',
     ],
   },
   {
@@ -51,10 +53,7 @@ const PROJECTS = [
     subject: 'Writer Settlement system',
     period: 'June. 2021',
     summary: '',
-    details: [
-      '- Using Redux to manage api calls',
-      '- Using context API for the smaller scales',
-    ],
+    details: ['- Using Redux to manage api calls', '- Using context API for the smaller scales'],
   },
   {
     subject: 'React SPA Modernisation Project',
@@ -69,20 +68,14 @@ const PROJECTS = [
   },
 ];
 
-const HIGHLIGHT_SKILLS = {
-  work:[
-  '- HTML/ CSS/ JS',
-  '- JavaScript',
-  '- React',
-  '- Redux',
-  '- Git(Bitbucket, Jira)',
-],
-personal:[
-  '- HTML/ CSS/ JS',
-  '- JavaScript',
-  '- Typescript',
-  '- React',
-  '- React Query',
-  '- Jest',
-]
-}
+export const HIGHLIGHT_SKILLS = {
+  work: ['- HTML/ CSS/ JS', '- JavaScript', '- React', '- Redux', '- Git(Bitbucket, Jira)'],
+  personal: [
+    '- HTML/ CSS/ JS',
+    '- JavaScript',
+    '- Typescript',
+    '- React',
+    '- React Query',
+    '- Jest',
+  ],
+};
