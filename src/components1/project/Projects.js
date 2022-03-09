@@ -1,9 +1,10 @@
 import React from 'react';
-import projectDR from '../../images/project_dr.png';
-import project1 from '../../images/project1.png';
-import project2 from '../../images/project2.png';
-import project3 from '../../images/project3.png';
-import project4 from '../../images/project4.gif';
+
+import projectDR from '../../assets/project_dr.png';
+import project1 from '../../assets/project1.png';
+import project2 from '../../assets/project2.png';
+import project3 from '../../assets/project3.png';
+import project4 from '../../assets/project4.gif';
 import './Project.css';
 
 export default function Project() {
