@@ -1,5 +1,5 @@
 import React from 'react';
-import Styled from 'styled-component';
+import Styled from 'styled-components';
 
 export default function PageV2() {
   return (
@@ -10,5 +10,5 @@ export default function PageV2() {
 }
 
 const Body = Styled.div`
-width: 1000px;
+  width: 1000px;
 `;
