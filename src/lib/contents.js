@@ -1,5 +1,9 @@
+export const SUMMARY =
+  'A Front-End developer keen to learn new skills and collaborate with others. A firm believer in discipline and self-driven process in learning. working well in specialist teams in exciting and continually developing environments. I am exposed to multicultural point of views integrated with a sociable and tactful personality, always enjoying the challenge of working under pressure either independently or as a member of a team within an agile team.';
+
 export const EXPERIENCE = [
   {
+    role: 'Front-End Developer',
     company: 'Joara',
     url: 'https://www.joara.com/',
     location: 'S. Korea',

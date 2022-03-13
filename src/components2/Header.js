@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { gmtToday } from '../lib/helper';
-import logo from '/assets/kainylogo.svg';
-import github from '/assets/logos/github.png';
-import gmail from '/assets/logos/gmail.png';
-import linkedin from '/assets/logos/linkedin.png';
+
+import logo from '../assets/kainylogo.svg';
+import github from '../assets/logos/github.png';
+import gmail from '../assets/logos/gmail.png';
+import linkedin from '../assets/logos/linkedin.png';
 
 export default function Header() {
   const { day, date, month, year } = gmtToday();
   return (
-    <div>
+    <HeaderWrap className="header-component">
       <Top>
         <TopBox>"Front-End Developer"</TopBox>
         <div>
@@ -28,7 +29,7 @@ export default function Header() {
         </TopBox>
       </Top>
       <div>
-        <h4>
+        <CurrentTime>
           <span>London</span>
           <span>
             <span className="utc-time">
@@ -38,16 +39,54 @@ export default function Header() {
               <span> {year}</span>
             </span>
           </span>
-        </h4>
+        </CurrentTime>
       </div>
-    </div>
+    </HeaderWrap>
   );
 }
 
+const HeaderWrap = styled.div`
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  background: #f8f8f8;
+  z-index: 10;
+
+  @media (min-width: 1000px) {
+    max-height: 150px;
+  }
+`;
+
 const Top = styled.div`
   display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  @media (min-width: 1000px) {
+    flex-flow: row;
+  }
 `;
 
 const TopBox = styled.div`
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid 1px black;
+
+  @media (min-width: 1000px) {
+    width: 200px;
+    border: 1px solid black;
+    flex-flow: column;
+  }
+`;
+
+const CurrentTime = styled.div`
+  border-top: solid 1px black;
+  border-bottom: solid 2px black;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
 `;
