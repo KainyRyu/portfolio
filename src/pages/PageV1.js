@@ -1,8 +1,8 @@
 import React from 'react';
-import Profile from '../components_v1/profile';
-import Header from '../components_v1/Header';
-import Activities from '../components_v1/activities/Activities';
-import Project from '../components_v1/project/Projects';
+import Profile from '../components1/profile1';
+import Header from '../components1/Header1';
+import Activities from '../components1/activities/Activities';
+import Project from '../components1/project/Projects';
 
 function V1() {
   return (
