@@ -11,7 +11,7 @@ export default function Header() {
   const { day, date, month, year } = gmtToday();
   return (
     <HeaderWrap className="header-component">
-      <Top>
+      {/* <Top>
         <TopBox>"Front-End Developer"</TopBox>
         <div>
           <img className="logo" src={logo} alt="Kainy Ryu" />
@@ -40,7 +40,7 @@ export default function Header() {
             </span>
           </span>
         </CurrentTime>
-      </div>
+      </div> */}
     </HeaderWrap>
   );
 }
@@ -55,6 +55,8 @@ const HeaderWrap = styled.div`
   max-width: 1000px;
   background: #f8f8f8;
   z-index: 10;
+  height: 210px;
+  border: 1px solid black;
 
   @media (min-width: 1000px) {
     max-height: 150px;
