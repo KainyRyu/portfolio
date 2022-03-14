@@ -1,19 +1,18 @@
-import React, { useEffect, useRef, useCallback, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import useIntersect from '../hooks/useIntersect';
 import { PROJECTS } from '../lib/contents';
 
 const projectList = document.querySelectorAll('.project');
 export default function Project2() {
   const [refList, setRefList] = useState(0);
+  const [ioIdx, setIoIdx] = useState(0);
   const listWrapRef = useRef(null);
   const listElems = listWrapRef.current && listWrapRef?.current.children;
 
   const io = new IntersectionObserver((entries, observer) => {
-    const target = entries[0].target;
-    const i = entries[0].target.dataset.index;
-    console.log(entries[0]);
+    setIoIdx(entries[0].target.dataset.index);
   });
+  console.log(ioIdx);
 
   useEffect(() => {
     listWrapRef.current && setRefList([...listWrapRef?.current.children]);
@@ -27,25 +26,33 @@ export default function Project2() {
       });
   }, [refList]);
 
-  const getElems = (idx) => {
-    const elem = listWrapRef[idx];
-    elem && io.observe(elem);
-  };
+  useEffect(() => {
+    refList &&
+      refList.map((item) => {
+        const boundingRect = item.getBoundingClientRect();
+        if (boundingRect.top > window.innerHeight * 0.1) {
+          window.addEventListener('scroll', () => {
+            console.log({ ioIdx, boundingRect: boundingRect.top });
+          });
+        }
+      });
+  }, [refList, ioIdx]);
 
   return (
     <ProjectSection>
       <ProejctListWrap ref={listWrapRef}>
         {PROJECTS.map(({ subject, period, summary, details }, idx) => {
-          listWrapRef && getElems(idx);
           return (
             <ProjectWrap key={idx} className="project" data-index={idx}>
               <Project idx={idx}>
                 <div>Img</div>
-                <h2>subject: {subject}</h2>
+                <h1>subject: {subject}</h1>
                 <div>period: {period}</div>
                 <div>summary: {summary}</div>
                 {details.map((detail, idx) => (
-                  <li key={idx}>{detail}</li>
+                  <li key={idx} style={{ listStyle: 'none' }}>
+                    {detail}
+                  </li>
                 ))}
               </Project>
             </ProjectWrap>
@@ -57,7 +64,7 @@ export default function Project2() {
 }
 
 const ProjectSection = styled.div`
-  text-align: center;
+  // text-align: center;
   margin-top: 220px;
   overflow: hidden;
   box-sizing: border-box;
@@ -68,19 +75,27 @@ const ProjectSection = styled.div`
 
 const ProejctListWrap = styled.div`
   border: red 1px solid;
-  position: relative;
+  top: 210px;
 `;
 
 const ProjectWrap = styled.div`
+  position: relative;
   width: 100%;
+  padding-bottom: 70vh;
   border-bottom: ${(props) => props['data-index']}px solid black;
 `;
 
 const Project = styled.div`
-  left: ${(props) => (props.idx % 2 === 0 ? 2 : 50)}%;
+  ${(props) => (props.idx % 2 === 0 ? 'left' : 'right')}: -10%;
+  position: absolute;
+  white-space: nowrap;
+  border: blue 1px dotted;
 
-  height: 70vh;
+  transition: 0.5s;
+  transform: translateX(${(props) => (props.idx % 2 === 0 ? '25' : '-25')}%);
   @media (min-width: 1000px) {
-    max-width: 50%;
+    // max-width: 500%;
   }
 `;
+
+const DetailList = styled.li``;
