@@ -6,6 +6,8 @@ import Experiences from '../components2/Experiences';
 import Header from '../components2/Header';
 import Skills from '../components2/Skills';
 import TopSection from '../components2/TopSection';
+import Educations from '../components2/Educations';
+import Footer from '../components2/Footer';
 
 export default function PageV2() {
   useEffect(() => {
@@ -13,26 +15,26 @@ export default function PageV2() {
       window.scrollTo(0, 0);
     };
   }, []);
+  const onClickToTheTop = (e) => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+  };
   return (
     <GlobalWidth>
       <HeaderWrap className="header-wrap">
         <Header />
       </HeaderWrap>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <BodyWrap>
-              <TopSection />
-              <Experiences />
-              <Skills />
-              <h1>Project/ Activity/ Education</h1>
-              <Projects />
-            </BodyWrap>
-          }
-        />
-        <Route path=":projects" element={<Projects />} />
-      </Routes>
+      <BodyWrap>
+        <TopSection />
+        <Experiences />
+        <Skills />
+        <h1>Work Projects</h1>
+        <Projects />
+        <Educations />
+        {/* 맥북, 아이폰 손 나오면서 스크롤에 따라서 텍스트, 화면 바뀌기 */}
+        <Footer />
+        <button onClick={onClickToTheTop}></button>
+      </BodyWrap>
     </GlobalWidth>
   );
 }
