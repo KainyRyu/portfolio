@@ -6,41 +6,42 @@ import Main from '../assets/bwbg.gif';
 export default function TopSection() {
   return (
     <Section>
-      <ImgCover></ImgCover>
       <MainImg src={Main} alt="Kainy" />
       <Summary>{SUMMARY}</Summary>
     </Section>
   );
 }
 const Section = styled.div`
-  margin: 10px 5px;
   display: flex;
   flex-flow: column;
 
-  @media (min-width: 600px) {
+  padding: 10px;
+  @media (min-width: 650px) {
     justify-content: space-between;
     flex-flow: row;
   }
 `;
 
-const ImgCover = styled.div`
-  overflow: hidden;
-`;
 const MainImg = styled.img`
+  overflow: hidden;
   object-fit: cover;
   border: 1px solid black;
   height: auto;
-  @media (min-width: 600px) {
+  width: 100%;
+  // margin: 0 auto;
+
+  @media (min-width: 650px) {
     width: 60%;
     height: auto;
   }
 `;
 
 const Summary = styled.div`
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: justify;
-  padding: 1.5%;
-  @media (min-width: 600px) {
+
+  @media (min-width: 650px) {
     width: 37%;
+    margin-right: 5px;
   }
 `;
