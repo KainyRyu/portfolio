@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Project from './components1/project/Projects';
+// import './App.css';
 import { GlobalContextProvider } from './context/useGlobalContext';
 import NotFound from './pages/NotFound';
 import PageV1 from './pages/PageV1';
