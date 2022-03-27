@@ -1,12 +1,23 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const GlobalContext = createContext();
 function GlobalContextProvider({ children }) {
   const [headerHeight, setHeaderHeight] = useState(0);
-  const aValue = '';
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrollPosition(window.scrollY);
+    });
+
+    return () => {
+      window.removeEventListener('scroll');
+    };
+  }, []);
 
   return (
-    <GlobalContext.Provider value={{ aValue, headerHeight, setHeaderHeight }}>
+    <GlobalContext.Provider value={{ scrollPosition, headerHeight, setHeaderHeight }}>
       {children}
     </GlobalContext.Provider>
   );
