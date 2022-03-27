@@ -10,7 +10,6 @@ export default function Educations() {
       {ACTIVITIES.map((activity, idx) => (
         <ActivityWrap key={idx}>
           <ActivityTitle>
-            {console.log({ activity })}
             {activity.link ? (
               <a href={activity.link} target="_blank" rel="noreferrer">
                 {activity.subject}
