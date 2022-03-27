@@ -1,36 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HIGHLIGHT_SKILLS } from '../lib/contents';
 
 export default function Skills() {
-  const WORK_TECH_STACK = ['HTML/ CSS/ JS', 'React', 'Redux', 'Git(Bitbucket, Jira)'];
-  const PERSONAL_TECH_STACK = ['HTML/ CSS/ JS', 'React', 'TypeScript', 'React Query', 'Jest'];
   return (
     <div>
-      <TechStacks>
-        Work Tech Stack:{' '}
-        {WORK_TECH_STACK.map((stack, idx) => (
-          <Stack key={idx}>{stack}, </Stack>
+      <h1>Skills</h1>
+      <ArrayOfStacks>
+        {HIGHLIGHT_SKILLS['work'].map((stack, idx) => (
+          <Skill key={idx}>{stack}</Skill>
         ))}
-      </TechStacks>
-      <TechStacks>
-        Personal Tech Stack:{' '}
-        {PERSONAL_TECH_STACK.map((stack, idx) => (
-          <Stack key={idx}>{stack}, </Stack>
-        ))}
-      </TechStacks>
+      </ArrayOfStacks>
     </div>
   );
 }
 
-const TechStacks = styled.h1`
-  border: 1px solid black;
-  background: #bcbcbc;
-  width: 99%;
-  height: 40px;
-  white-space: nowrap;
-  overflow: hidden;
+const ArrayOfStacks = styled.div`
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
-const Stack = styled.span`
-  margin: 0 10px;
+const Skill = styled.h1`
+  letter-spacing: 1px;
+  margin: 10px;
+  background-color: lightgray;
 `;
