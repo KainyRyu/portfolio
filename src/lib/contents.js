@@ -79,8 +79,18 @@ export const PROJECTS = [
 ];
 
 export const HIGHLIGHT_SKILLS = {
-  work: ['HTML', 'CSS', 'JS', 'React', 'Redux', 'React Query', 'Git(Bitbucket, Jira)'],
-  personal: ['Typescript', 'React Query', 'Jest'],
+  skills: [
+    'HTML',
+    'CSS',
+    'JS',
+    'React',
+    'Redux',
+    'React-Query',
+    'Git(Bitbucket, Jira)',
+    'Typescript',
+    'Jest',
+  ],
+  personal: ['Typescript', 'React-Query', 'Jest'],
 };
 
 export const PERSONAL_PROJECTS = [
