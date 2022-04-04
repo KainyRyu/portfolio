@@ -25,14 +25,12 @@ export default function PageV2() {
 
   return (
     <GlobalWidth>
-      <HeaderWrap className="header-wrap">
-        <Header />
-      </HeaderWrap>
-      <BodyWrap headerHeight={headerHeight}>
+      <HeaderWrap className="header-wrap">{/* <Header /> */}</HeaderWrap>
+      {/* <BodyWrap headerHeight={headerHeight}> */}
+      <BodyWrap>
         <TopSection />
         <Experiences />
         <Skills />
-        <h1>Work Projects</h1>
         <Projects />
         <Educations />
         {/* 맥북, 아이폰 손 나오면서 스크롤에 따라서 텍스트, 화면 바뀌기 */}
@@ -47,8 +45,9 @@ const HeaderWrap = Styled.div`
   position: relative;
 `;
 const BodyWrap = Styled.div`
-  top: ${(props) => props.headerHeight}px;
+  // top: ${(props) => props.headerHeight}px;
   position: relative;
+  padding: 10px;
   @media (min-width: 650px) {
     top: 170px;
   }

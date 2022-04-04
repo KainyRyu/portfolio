@@ -7,15 +7,10 @@ import PreJoara from '../assets/projects/pre_joara.png';
 import DesktopJoara from '../assets/projects/mw_renew.png';
 import JoaraWTOld from '../assets/projects/webtoon_old.png';
 import JoaraWTRenew from '../assets/projects/webtoon_new.png';
+import { sceneInfo } from '../lib/sceneInfo';
 
 export default function Project2() {
-  const mainTitleRef = useRef(null);
-  const [position, setPosition] = useState(0);
-  const [pageYOffset, setPageYOffset] = useState(0);
-  const [refList, setRefList] = useState(0);
-  const [ioIdx, setIoIdx] = useState(0);
   const listWrapRef = useRef(null);
-  const listElems = listWrapRef.current && listWrapRef?.current.children;
 
   const action = {
     moveSubject(elem) {
@@ -32,64 +27,31 @@ export default function Project2() {
     },
   };
 
-  const observer = new IntersectionObserver((entries) => {
-    const item = entries[0];
-    console.log(item.target.dataset.projectindex, item.boundingClientRect.top);
-    console.log(entries);
-    // entries.forEach((entry) => {
-    //   window.addEventListener('scroll', () => {
-    //     // console.log(entry.target.dataset.projectindex, entry);
-    //     console.log(entry.target.dataset.projectindex, entry.boundingClientRect.top);
-
-    //     // console.log(
-    //     //   window.innerHeight * 0.9,
-    //     //   entry.boundingClientRect.top, // boudingClientRect.top <- this value is absolute
-    //     //   window.innerHeight * 0.2,
-    //     //   entry.boundingClientRect.top,
-    //     //   entry.target.dataset.projectindex,
-    //     // );
-    //     if (entry.isIntersecting) {
-    //       // console.log(entry.isIntersecting, entry.target.dataset.projectindex);
-    //       // console.log(entry.target.dataset.projectindex, entry.boundingClientRect.top);
-    //       // console.log('children --- ', entry.target.children[0].children);
-    //     }
-    //   });
-    // });
-  });
-  const onScroll = () => {
-    setPosition(window.scrollY);
-    setPageYOffset(document.body.offsetHeight);
+  const setLayout = () => {
+    sceneInfo.forEach((scene, idx) => {
+      if (sceneInfo[idx].type === 'sticky') {
+        sceneInfo[idx].scrollHeight = sceneInfo[idx].heightNum * window.innerHeight;
+      } else if (sceneInfo[idx].type === 'normal') {
+        sceneInfo[idx].scrollHeight = sceneInfo[idx].objs.container.offsetHeight;
+      }
+      sceneInfo[idx].objs.container.style.height = `${sceneInfo[idx].scrollHeight}px`;
+    });
   };
-  // console.log({ scrollY: position, pageYOffset });
-  // console.log({ outerHeight: window.outerHeight, innerHeight: window.innerHeight });
+
   useEffect(() => {
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener('resize', setLayout);
+    window.addEventListener('load', setLayout);
+
+    return () => {
+      window.removeEventListener('resize', setLayout);
+      window.removeEventListener('load', setLayout);
+    };
   }, []);
-  // console.log({ position, pageYOffset });
-
-  useEffect(() => {
-    refList &&
-      refList.map((item, idx) => {
-        window.addEventListener('scroll', () => {
-          // console.log({ ioIdx, boundingRect: boundingRect.top });
-          observer.observe(refList[idx]);
-        });
-        const boundingRect = item.getBoundingClientRect();
-        if (boundingRect.top > window.innerHeight * 0.1) {
-          window.addEventListener('scroll', () => {
-            // console.log({ ioIdx, boundingRect: boundingRect.top });
-          });
-        }
-
-        return () => window.removeEventListener('scroll');
-      });
-  }, [refList, ioIdx]);
 
   return (
     <ProjectSection>
       <ScrollImgs>
-        <ImgWrap>
+        <ImgWrap className="scroll-img0">
           <img
             className="scroll-img"
             src={JoaraWTOld}
@@ -97,7 +59,7 @@ export default function Project2() {
             style={{ height: '600px' }}
           />
         </ImgWrap>
-        <ImgWrap>
+        <ImgWrap className="scroll-img1">
           <img
             className="scroll-img"
             src={JoaraWTRenew}
@@ -107,7 +69,7 @@ export default function Project2() {
             }}
           />
         </ImgWrap>
-        <ImgWrap>
+        <ImgWrap className="scroll-img2">
           <img
             className="scroll-img"
             src={PreJoara}
@@ -117,7 +79,7 @@ export default function Project2() {
             }}
           />
         </ImgWrap>
-        <ImgWrap>
+        <ImgWrap className="scroll-img3">
           <img
             className="scroll-img"
             src={JoaraMobile}
@@ -127,7 +89,7 @@ export default function Project2() {
             }}
           />
         </ImgWrap>
-        <ImgWrap>
+        <ImgWrap className="scroll-img4">
           <img
             className="scroll-img"
             src={DesktopJoara}
@@ -141,9 +103,8 @@ export default function Project2() {
       <ProejctListWrap ref={listWrapRef}>
         {PROJECTS.map(({ subject, period, summary, details }, idx) => {
           return (
-            <ProjectWrap key={idx} className="project" data-projectindex={idx}>
+            <ProjectWrap key={idx} className={`project-wrap project${idx}`} data-projectindex={idx}>
               <Project idx={idx}>
-                <div>Img</div>
                 <h1>subject: {subject}</h1>
                 <div>period: {period}</div>
                 <div>summary: {summary}</div>
