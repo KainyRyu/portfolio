@@ -2,50 +2,109 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { PROJECTS } from '../lib/contents';
 
-const projectList = document.querySelectorAll('.project');
+import JoaraMobile from '../assets/projects/mw_mobile.png';
+import PreJoara from '../assets/projects/pre_joara.png';
+import DesktopJoara from '../assets/projects/mw_renew.png';
+import JoaraWTOld from '../assets/projects/webtoon_old.png';
+import JoaraWTRenew from '../assets/projects/webtoon_new.png';
+import { sceneInfo } from '../lib/sceneInfo';
+
 export default function Project2() {
-  const [refList, setRefList] = useState(0);
-  const [ioIdx, setIoIdx] = useState(0);
   const listWrapRef = useRef(null);
-  const listElems = listWrapRef.current && listWrapRef?.current.children;
 
-  const io = new IntersectionObserver((entries, observer) => {
-    setIoIdx(entries[0].target.dataset.index);
-  });
-  console.log(ioIdx);
+  const action = {
+    moveSubject(elem) {
+      if (elem) {
+        // Move Subject
+        elem.style.transform = `translateX(${window.innerWidth}px)`;
+      }
+    },
+    goBack(elem) {
+      if (elem) {
+        // Move back Subject
+        elem.style.transform = `translateX(-${window.innerWidth}px)`;
+      }
+    },
+  };
+
+  const setLayout = () => {
+    sceneInfo.forEach((scene, idx) => {
+      if (sceneInfo[idx].type === 'sticky') {
+        sceneInfo[idx].scrollHeight = sceneInfo[idx].heightNum * window.innerHeight;
+      } else if (sceneInfo[idx].type === 'normal') {
+        sceneInfo[idx].scrollHeight = sceneInfo[idx].objs.container.offsetHeight;
+      }
+      sceneInfo[idx].objs.container.style.height = `${sceneInfo[idx].scrollHeight}px`;
+    });
+  };
 
   useEffect(() => {
-    listWrapRef.current && setRefList([...listWrapRef?.current.children]);
-  }, [listElems]);
+    window.addEventListener('resize', setLayout);
+    window.addEventListener('load', setLayout);
 
-  useEffect(() => {
-    console.log('refList--', refList);
-    refList &&
-      refList.forEach((element) => {
-        io.observe(element);
-      });
-  }, [refList]);
-
-  useEffect(() => {
-    refList &&
-      refList.map((item) => {
-        const boundingRect = item.getBoundingClientRect();
-        if (boundingRect.top > window.innerHeight * 0.1) {
-          window.addEventListener('scroll', () => {
-            console.log({ ioIdx, boundingRect: boundingRect.top });
-          });
-        }
-      });
-  }, [refList, ioIdx]);
+    return () => {
+      window.removeEventListener('resize', setLayout);
+      window.removeEventListener('load', setLayout);
+    };
+  }, []);
 
   return (
     <ProjectSection>
+      <ScrollImgs>
+        <ImgWrap className="scroll-img0">
+          <img
+            className="scroll-img"
+            src={JoaraWTOld}
+            alt="old webtoon"
+            style={{ height: '600px' }}
+          />
+        </ImgWrap>
+        <ImgWrap className="scroll-img1">
+          <img
+            className="scroll-img"
+            src={JoaraWTRenew}
+            alt="new webtoon"
+            style={{
+              height: '600px',
+            }}
+          />
+        </ImgWrap>
+        <ImgWrap className="scroll-img2">
+          <img
+            className="scroll-img"
+            src={PreJoara}
+            alt="main mobile"
+            style={{
+              height: '600px',
+            }}
+          />
+        </ImgWrap>
+        <ImgWrap className="scroll-img3">
+          <img
+            className="scroll-img"
+            src={JoaraMobile}
+            alt="renewed mobile"
+            style={{
+              height: '600px',
+            }}
+          />
+        </ImgWrap>
+        <ImgWrap className="scroll-img4">
+          <img
+            className="scroll-img"
+            src={DesktopJoara}
+            alt="renewed mobile"
+            style={{
+              height: '600px',
+            }}
+          />
+        </ImgWrap>
+      </ScrollImgs>
       <ProejctListWrap ref={listWrapRef}>
         {PROJECTS.map(({ subject, period, summary, details }, idx) => {
           return (
-            <ProjectWrap key={idx} className="project" data-index={idx}>
+            <ProjectWrap key={idx} className={`project-wrap project${idx}`} data-projectindex={idx}>
               <Project idx={idx}>
-                <div>Img</div>
                 <h1>subject: {subject}</h1>
                 <div>period: {period}</div>
                 <div>summary: {summary}</div>
@@ -63,39 +122,43 @@ export default function Project2() {
   );
 }
 
-const ProjectSection = styled.div`
-  // text-align: center;
-  margin-top: 220px;
-  overflow: hidden;
+const ProjectSection = styled.section`
+  margin-top: 50px;
   box-sizing: border-box;
+  border: red 1px solid;
   padding: 5px;
+  overflow: hidden;
   @media (min-width: 600px) {
   }
 `;
 
 const ProejctListWrap = styled.div`
-  border: red 1px solid;
   top: 210px;
 `;
 
 const ProjectWrap = styled.div`
-  position: relative;
   width: 100%;
-  padding-bottom: 70vh;
-  border-bottom: ${(props) => props['data-index']}px solid black;
+  height: 80vh;
+  border-bottom: ${(props) => props['data-projectindex']}px solid black;
 `;
 
 const Project = styled.div`
   ${(props) => (props.idx % 2 === 0 ? 'left' : 'right')}: -10%;
-  position: absolute;
   white-space: nowrap;
   border: blue 1px dotted;
-
-  transition: 0.5s;
   transform: translateX(${(props) => (props.idx % 2 === 0 ? '25' : '-25')}%);
   @media (min-width: 1000px) {
     // max-width: 500%;
   }
 `;
 
-const DetailList = styled.li``;
+const ScrollImgs = styled.div`
+  position: sticky;
+  top: 200px;
+  height: 80vh;
+`;
+
+const ImgWrap = styled.div`
+  position: absolute;
+  // opacity: 0;
+`;

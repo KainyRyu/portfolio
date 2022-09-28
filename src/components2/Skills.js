@@ -1,36 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HIGHLIGHT_SKILLS } from '../lib/contents';
 
 export default function Skills() {
-  const WORK_TECH_STACK = ['HTML/ CSS/ JS', 'React', 'Redux', 'Git(Bitbucket, Jira)'];
-  const PERSONAL_TECH_STACK = ['HTML/ CSS/ JS', 'React', 'TypeScript', 'React Query', 'Jest'];
   return (
     <div>
-      <TechStacks>
-        Work Tech Stack:{' '}
-        {WORK_TECH_STACK.map((stack, idx) => (
-          <Stack key={idx}>{stack}, </Stack>
-        ))}
-      </TechStacks>
-      <TechStacks>
-        Personal Tech Stack:{' '}
-        {PERSONAL_TECH_STACK.map((stack, idx) => (
-          <Stack key={idx}>{stack}, </Stack>
-        ))}
-      </TechStacks>
+      <h1>Skills</h1>
+      <div>
+        <span>work </span>
+        <span style={{ backgroundColor: 'lightgray' }}>personal </span>
+      </div>
+      <ArrayOfStacks>
+        {HIGHLIGHT_SKILLS['skills'].map((stack, idx) => {
+          const personalStack = HIGHLIGHT_SKILLS['personal'].includes(stack);
+          return (
+            <Skill key={idx} personal={personalStack}>
+              {stack}
+            </Skill>
+          );
+        })}
+      </ArrayOfStacks>
     </div>
   );
 }
 
-const TechStacks = styled.h1`
-  border: 1px solid black;
-  background: #bcbcbc;
-  width: 99%;
-  height: 40px;
-  white-space: nowrap;
-  overflow: hidden;
+const ArrayOfStacks = styled.div`
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  width: 90%;
+  overflow-wrap: break-word;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
 `;
 
-const Stack = styled.span`
-  margin: 0 10px;
+const Skill = styled.h1`
+  display: inline;
+  letter-spacing: 1px;
+  margin: 10px;
+  background-color: ${(props) => (props.personal ? 'lightgray' : 'none')};
 `;

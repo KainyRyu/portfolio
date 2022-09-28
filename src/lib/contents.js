@@ -1,3 +1,9 @@
+import projectDR from '../assets/project_dr.png';
+import projectImg1 from '../assets/project1.png';
+import projectImg2 from '../assets/project2.png';
+import projectImg3 from '../assets/project3.png';
+import projectImg4 from '../assets/project4.gif';
+
 export const SUMMARY =
   'A Front-End developer keen to learn new skills and collaborate with others. A firm believer in discipline and self-driven process in learning. working well in specialist teams in exciting and continually developing environments. I am exposed to multicultural point of views integrated with a sociable and tactful personality, always enjoying the challenge of working under pressure either independently or as a member of a team within an agile team.';
 
@@ -73,13 +79,73 @@ export const PROJECTS = [
 ];
 
 export const HIGHLIGHT_SKILLS = {
-  work: ['- HTML/ CSS/ JS', '- JavaScript', '- React', '- Redux', '- Git(Bitbucket, Jira)'],
-  personal: [
-    '- HTML/ CSS/ JS',
-    '- JavaScript',
-    '- Typescript',
-    '- React',
-    '- React Query',
-    '- Jest',
+  skills: [
+    'HTML',
+    'CSS',
+    'JS',
+    'React',
+    'Redux',
+    'React-Query',
+    'Git(Bitbucket, Jira)',
+    'Typescript',
+    'Jest',
   ],
+  personal: ['Typescript', 'React-Query', 'Jest'],
 };
+
+export const PERSONAL_PROJECTS = [
+  {
+    img: projectImg1,
+    link: 'https://nadinefresko.github.io/group_project/',
+    title: 'Mind Your Rubbish',
+    summary:
+      'Best to test on a desktop view. It has a recycling drag and drop game and using svg files to separate each London borough. Using Twitter API for updating Recycling & Waste World Magazine. Please feel free to check your recycling skill.',
+  },
+  {
+    img: projectImg2,
+    link: 'https://kodflix-kainy.herokuapp.com',
+    title: 'Kodflix',
+    summary: `A film library it shows the film's detail; built with ReactJS. It gets the film data from the back-end server which is required to use nodeJS, expressJS and mongoDB.`,
+  },
+  {
+    img: projectImg3,
+    link: 'https://we-pair.herokuapp.com/',
+    title: 'WePair',
+    summary:
+      'An app specifically for developers who would like to pair programming. The user can search for the languages and locations then reqest to another user if the date is available. This was a group project',
+  },
+  {
+    img: projectImg4,
+    link: 'http://relieved-process234567.surge.sh/',
+    title: 'tell my GP',
+    summary: `Participated 'UK vs COVID-19 Hackathon'; Connecting the patients and GP surgeries to track COVID-19 symptoms daily. Using Gatsby, React, Material UI and Firebase.`,
+    medium: 'https://medium.com/ukvscovidhack/tell-my-gp-63de96231e38',
+  },
+];
+
+export const ACTIVITIES = [
+  {
+    subject: 'Hackathon',
+    location: 'London',
+    summary: `Participated in 'UK vs COVID-19' Hackathon during the quarantine period; more about the project tell my GP, and you'll see more on the Medium post.`,
+    link: 'https://medium.com/ukvscovidhack/tell-my-gp-63de96231e38',
+  },
+  {
+    subject: 'Coaching',
+    location: 'codebar - London',
+    summary:
+      'Pairing with beginner coders helping their project with HTML, CSS and Javascript and also learning from the experienced developers.',
+  },
+  {
+    subject: 'Event Organiser',
+    location: 'London',
+    summary: `Meetups : Running workshops for women who are interested in coding and would like to become a developer.
+  *Kodiri : Volunteering as a co-organiser running meetup events and helping people with the platform and HTML, CSS and JS.`,
+  },
+  {
+    subject: 'Running Workshops',
+    location: 'Kodiri - Youtube',
+    summary: `Running a live streaming workshops about react advanced skills.`,
+    link: 'https://www.youtube.com/watch?v=GAkdWTmPw9Q&feature=youtu.be',
+  },
+];
