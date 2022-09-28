@@ -1,8 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Project from './components1/project/Projects';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { GlobalContextProvider } from './context/useGlobalContext';
-import NotFound from './pages/NotFound';
 import PageV1 from './pages/PageV1';
 import PageV2 from './pages/PageV2';
 
@@ -13,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/v2022/*" element={<PageV2 />} />
           <Route path="/v2020" element={<PageV1 />} />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="/*" element={<Navigate replace to="/v2022" />} />
         </Routes>
       </BrowserRouter>
     </GlobalContextProvider>
