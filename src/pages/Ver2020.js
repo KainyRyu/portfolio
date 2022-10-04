@@ -4,7 +4,7 @@ import Header from '../ver2020/Header1';
 import Activities from '../ver2020/activities/Activities';
 import Project from '../ver2020/project/Projects';
 
-function V1() {
+export default function Ver2020() {
   return (
     <div className="main-page">
       <div className="timesbg">
@@ -31,5 +31,3 @@ function V1() {
     </div>
   );
 }
-
-export default V1;

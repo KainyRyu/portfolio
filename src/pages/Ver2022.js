@@ -10,7 +10,7 @@ import Educations from '../ver2022/Educations';
 import Footer from '../ver2022/Footer';
 import useGlobalContext from '../context/useGlobalContext';
 
-export default function PageV2() {
+export default function Ver2022() {
   const { headerHeight } = useGlobalContext();
   useEffect(() => {
     window.onbeforeunload = () => {
