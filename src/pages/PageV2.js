@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+
 import Styled from 'styled-components';
-import Projects from '../components2/Projects';
-import Experiences from '../components2/Experiences';
-import Header from '../components2/Header';
-import Skills from '../components2/Skills';
-import TopSection from '../components2/TopSection';
-import Educations from '../components2/Educations';
-import Footer from '../components2/Footer';
+import Projects from '../ver2022/Projects';
+import Experiences from '../ver2022/Experiences';
+import Header from '../ver2022/Header';
+import Skills from '../ver2022/Skills';
+import TopSection from '../ver2022/TopSection';
+import Educations from '../ver2022/Educations';
+import Footer from '../ver2022/Footer';
 import useGlobalContext from '../context/useGlobalContext';
 
 export default function PageV2() {
@@ -25,7 +25,9 @@ export default function PageV2() {
 
   return (
     <GlobalWidth>
-      <HeaderWrap className="header-wrap">{/* <Header /> */}</HeaderWrap>
+      <HeaderWrap className="header-wrap">
+        <Header />
+      </HeaderWrap>
       {/* <BodyWrap headerHeight={headerHeight}> */}
       <BodyWrap>
         <TopSection />

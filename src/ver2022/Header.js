@@ -9,19 +9,19 @@ import linkedin from '../assets/logos/linkedin.png';
 import useGlobalContext from '../context/useGlobalContext';
 
 export default function Header() {
-  const { setHeaderHeight } = useGlobalContext();
+  // const { setHeaderHeight } = useGlobalContext();
   const headerBottomRef = useRef(null);
   const [isMobileSize, setIsMobileSize] = useState(true);
   const { day, date, month, year } = gmtToday();
 
-  useEffect(() => {
-    setIsMobileSize(window.innerWidth < 601);
-    setHeaderHeight(headerBottomRef.current.offsetHeight + headerBottomRef.current.offsetTop);
-    window.addEventListener('resize', () => {
-      setIsMobileSize(window.innerWidth < 601);
-      setHeaderHeight(headerBottomRef.current.offsetHeight + headerBottomRef.current.offsetTop);
-    });
-  }, [setHeaderHeight]);
+  // useEffect(() => {
+  //   setIsMobileSize(window.innerWidth < 601);
+  //   setHeaderHeight(headerBottomRef.current.offsetHeight + headerBottomRef.current.offsetTop);
+  //   window.addEventListener('resize', () => {
+  //     setIsMobileSize(window.innerWidth < 601);
+  //     setHeaderHeight(headerBottomRef.current.offsetHeight + headerBottomRef.current.offsetTop);
+  //   });
+  // }, [setHeaderHeight]);
 
   return (
     <HeaderWrap className="header-component">
