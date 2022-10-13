@@ -2,7 +2,11 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const GlobalContext = createContext();
 function GlobalContextProvider({ children }) {
-  // const [headerHeight, setHeaderHeight] = useState(0);
+  // TODO Theme
+  // const [isDark, setIsDark] = useState(false)
+  // TODO Translate
+// const [language, setLanguage] = useState('eng')
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => setScrollPosition(window.scrollY);
