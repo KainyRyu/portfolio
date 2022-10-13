@@ -131,5 +131,6 @@
   .today {
     font-size: 20px;
     padding: 2px 0;
+    height: 30px;
   }
 }
