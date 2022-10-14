@@ -5,10 +5,11 @@ import Projects from '../ver2022/Projects';
 import Experiences from '../ver2022/Experiences';
 import Header from '../ver2022/Header';
 import Skills from '../ver2022/Skills';
-import TopSection from '../ver2022/TopSection';
+import Profile from '../ver2022/Profile';
 import Educations from '../ver2022/Educations';
 import Footer from '../ver2022/Footer';
 import useGlobalContext from '../context/useGlobalContext';
+import Gnb from '../ver2022/Gnb';
 
 export default function Ver2022() {
   const { headerHeight } = useGlobalContext();
@@ -25,27 +26,24 @@ export default function Ver2022() {
 
   return (
     <GlobalWidth>
-      <HeaderWrap className="header-wrap">
-        <Header />
-      </HeaderWrap>
+      <Gnb />
+
+      <Header />
+
       {/* <BodyWrap headerHeight={headerHeight}> */}
-      <BodyWrap>
-        <TopSection />
-        <Experiences />
-        <Skills />
-        <Projects />
-        <Educations />
-        {/* 맥북, 아이폰 손 나오면서 스크롤에 따라서 텍스트, 화면 바뀌기 */}
-        <Footer />
-        <button onClick={onClickToTheTop}></button>
-      </BodyWrap>
+
+      <Profile />
+      <Experiences />
+      <Skills />
+      <Projects />
+      <Educations />
+      {/* 맥북, 아이폰 손 나오면서 스크롤에 따라서 텍스트, 화면 바뀌기 */}
+      <Footer />
+      <button onClick={onClickToTheTop}></button>
     </GlobalWidth>
   );
 }
 
-const HeaderWrap = Styled.div`
-  position: relative;
-`;
 const BodyWrap = Styled.div`
   // top: ${(props) => props.headerHeight}px;
   position: relative;
