@@ -11,13 +11,19 @@ export default function Profile() {
 
   return (
     <div className={style.container}>
-      <div className={style.img_container}>
-        <img
-          src={Main}
-          alt="Kainy"
-          style={{ transform: `scale(${imageScale > 1 ? imageScale : 1})` }}
-        />
-      </div>
+      <figure className={style.figure_container}>
+        <div className={style.img_container}>
+          <img
+            src={Main}
+            alt="Kainy"
+            style={{ transform: `scale(${imageScale > 1 ? imageScale : 1})` }}
+          />
+        </div>
+        <figcaption>
+          <b>Kainy</b> in the South of France back in 2019, and now she misses it so bad. Especially
+          the croissants
+        </figcaption>
+      </figure>
       <div className={style.intro}>{SUMMARY}</div>
     </div>
   );

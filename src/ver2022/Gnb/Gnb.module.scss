@@ -25,14 +25,15 @@
     .nav_container {
       display: flex;
 
+      a,
+      a:visited {
+        color: #f8f8f8;
+        text-decoration: none;
+        margin: 8px;
+      }
+
       @media (max-width: 480px) {
         display: none;
-        a,
-        a:visited {
-          color: #f8f8f8;
-          text-decoration: none;
-          margin: 8px;
-        }
       }
     }
   }
