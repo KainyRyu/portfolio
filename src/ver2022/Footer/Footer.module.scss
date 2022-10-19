@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 15px;
+
+  .link_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
