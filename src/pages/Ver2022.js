@@ -10,6 +10,7 @@ import Educations from '../ver2022/Educations';
 import Footer from '../ver2022/Footer';
 import useGlobalContext from '../context/useGlobalContext';
 import Gnb from '../ver2022/Gnb';
+import TopBtn from '../ver2022/TopBtn';
 
 export default function Ver2022() {
   const { headerHeight } = useGlobalContext();
@@ -18,11 +19,6 @@ export default function Ver2022() {
       window.scrollTo(0, 0);
     };
   }, []);
-
-  const onClickToTheTop = (e) => {
-    e.preventDefault();
-    window.scrollTo(0, 0);
-  };
 
   return (
     <GlobalWidth>
@@ -35,23 +31,15 @@ export default function Ver2022() {
       <Profile />
       <Experiences />
       <Skills />
-      <Projects />
-      <Educations />
+      {/* <Projects /> */}
+      {/* <Educations /> */}
       {/* 맥북, 아이폰 손 나오면서 스크롤에 따라서 텍스트, 화면 바뀌기 */}
       <Footer />
-      <button onClick={onClickToTheTop}></button>
+      <TopBtn />
     </GlobalWidth>
   );
 }
 
-const BodyWrap = Styled.div`
-  // top: ${(props) => props.headerHeight}px;
-  position: relative;
-  padding: 10px;
-  @media (min-width: 650px) {
-    top: 170px;
-  }
-`;
 const GlobalWidth = Styled.div`
 width: 100%;
   max-width: 1000px;
